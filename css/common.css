@@ -64,6 +64,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .info_prd_wrap{position: absolute;top:34px;left: 50%;margin-left: -222px;}
 .gnb>ul>li>div>.info_prd_wrap>li{float: left;}
 .gnb>ul>li>div>.info_prd_wrap>li>h3{color:#8da23a;font-weight: bold;margin-bottom: 24px;}
+.syncros_h3{background: url(../images/common/gnb_sub_syncros.png) 0 0 no-repeat;text-indent: -9999px;}
 .gnb>ul>li>div>.info_prd_wrap>li>ul{margin-right: 100px;}
 .gnb>ul>li>div>.info_prd_wrap>li>ul>li{margin-bottom: 5px;}
 .gnb>ul>li>div>.info_prd_wrap>li>ul>li>a{color:#e1e1e1;}
