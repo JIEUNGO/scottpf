@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{margin: 0;padding: 0;}
+html{overflow-y:scroll;}
+li{list-style:none;}
+fieldset{border:none;}
+legend, hr, .blind {position:absolute; left:-9999px;}
+caption{text-indent:-9999px; height:0; overflow:hidden; visibility:hidden;}
+img,button,input[type="submit"],input[type="button"],input[type="reset"]{border:none; vertical-align:middle;}
+a{text-decoration:none; color:#494949;}
+body, input, textarea, select, button{font:14px/1.33 Nanum Gothic,'나눔고딕', Malgun Gothic, '맑은고딕', Dotum, '돋움', arial, sans-serif; color:#4d4d4d;}
+input, select, button {vertical-align:middle;}
+input[type="text"], input[type="email"],input[type="url"], input[type="search"],input[type="password"], select, textarea{border:1px solid #c8c8c8;}
+address, em{font-style:normal;}
+h1, h2, h3, h4, h5, h6, strong{font-size:100%; font-weight:normal;}
+.clearFix:after{content:""; display:block;clear:both;}
+.clearFix{*zoom:1;}
+button, input[type="button"], input[type="submit"], input[type="reset"]{cursor:pointer;}
+table{border-collapse:collapse;border-spacing:0;width: 100%;}
+th{font-weight: normal;}
+textarea{resize:none;vertical-align: middle;padding: 2px;}
+*,
+*:after,*:before {box-sizing: border-box;}
+@font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.eot?62115255');
+      src: url('../font/fontello.eot?62115255#iefix') format('embedded-opentype'),
+           url('../font/fontello.woff?62115255') format('woff'),
+           url('../font/fontello.ttf?62115255') format('truetype'),
+           url('../font/fontello.svg?62115255#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+}
+
+#wrap{width: 100%;}
+#header_wrap{width: 100%;height: 110px;background-color: #000;position: relative;}
+.skip_menu a{background:#fff;width:100%;position:absolute;top:-200px; left:0;text-align:center;padding:5px 0;color:#000;font-weight:bold;}
+.skip_menu a:focus{display:block; top:0;}
+#header{max-width: 1200px;margin: 0 auto;}
+#header h1{padding: 30px 0 0 7px;float: left;}
+.utilmenu{position: absolute;top:23px;right: 30px;width: auto;}
+.utilmenu ul{padding:6px 23px 0 0;display: inline-block;vertical-align: middle;}
+.utilmenu ul li{float: left;}
+.utilmenu ul li:first-child{padding-right: 18px;}
+.utilmenu ul li a{color:#fff;font-size: 12px;}
+.utilmenu ul li a:before{content:"\f02c";font-family:'fontello';color:#fff;font-size: 20px;vertical-align: middle;padding-right: 7px;}
+.utilmenu ul li+li>a:before{content:"\e803";}
+.utilmenu p{float: right;border: 1px solid #979797;background: url(../images/common/bg_header_sch_dotline.png) 147px 4px no-repeat;}
+.utilmenu p>input[type="text"]{background-color: #000;border: none;padding: 8px 4px;width: 147px;color:#fff;}
+.utilmenu p>input[type="image"]{padding-left: 9px;padding-right: 8px;}
+.gnb{padding:78px 0 0 31.6666%;}
+.gnb>ul>li{float: left;width: 12%;}
+.gnb>ul>li+li{width: 7%;margin-left: 8%;}
+.gnb>ul>li+li+li{width: 12%;margin-left:10%}
+.gnb>ul>li>a{color:#fff;font-weight:bold;font-size: 15px;}
+.gnb>ul>li:first-child>a,
+.gnb>ul>li+li+li+li>a{background: url(../images/common/bullet_gnb.png) right 50% no-repeat;padding-right: 21px;}
+.gnb>ul>li:first-child>a:hover,
+.gnb>ul>li:first-child>a:focus,
+.gnb>ul>li+li+li+li>a:hover,
+.gnb>ul>li+li+li+li>a:focus{background: url(../images/common/bullet_gnb_ov.png) right 50% no-repeat;padding-right: 21px;}
+.gnb>ul>li>a:hover, .gnb>ul>li>a:focus{color:#afca43;}
+.gnb>ul>li>div{position: absolute;top:110px;left: 0;width: 100%;height: 273px;background-color: #0d0d0d;min-width: 1024px;/* display: none; */}
+.info_prd_wrap{position: absolute;top:34px;left: 50%;margin-left: -222px;}
+.gnb>ul>li>div>.info_prd_wrap>li{float: left;}
+.gnb>ul>li>div>.info_prd_wrap>li>h3{color:#8da23a;font-weight: bold;margin-bottom: 24px;}
+.gnb>ul>li>div>.info_prd_wrap>li>ul{margin-right: 100px;}
+.gnb>ul>li>div>.info_prd_wrap>li>ul>li{margin-bottom: 5px;}
+.gnb>ul>li>div>.info_prd_wrap>li>ul>li>a{color:#e1e1e1;}
+.gnb>ul>li>div>.info_prd_wrap>li>ul>li>a:hover,.gnb>ul>li>div>.info_prd_wrap>li>ul>li>a:focus{text-decoration: underline;}
+.li_common{position: relative;}
+.ul_common{position: absolute;top:32px;left: -40px;background-color: #0d0d0d;height: 160px;width:160px;padding: 30px;}
+.ul_common>li>a{color:#e1e1e1;}
+.ul_common>li>a:hover,.ul_common>li>a:focus{text-decoration: underline;}
+
+.ul_common{display: none;}

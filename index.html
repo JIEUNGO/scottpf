@@ -9,91 +9,99 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <link rel="shortcut icon" type="image/x-icon" href="images/common/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/common.css">
-  <script type="text/javascript" src="js/html5shiv.js"></script>
+  <script type="text/javascript" src="js/html5shiv.min.js"></script>
   <title>Scott North Asia</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
  </head>
  <body>
 	<div id="wrap">
-		<header id="header">
-			<h1><a href="index.html"><img src="images/common/header_logo.png" alt="스캇로고"></a></h1>
-			<div class="utilmenu">
-				<h2 class="blind">유틸메뉴</h2>
-				<ul>
-					<li><a href="#">LOG IN</a></li>
-					<li><a href="#">JOIN</a></li>
-				</ul>
-				<input type="text" name="sch_text" id="sch_text" title="전체메뉴검색" />
-				<input type="submit" name="sch_btn" id="sch_btn" title="전체메뉴검색버튼" />
-			</div>
-			<div class="gnb">
-				<h2 class="blind">메인메뉴</h2>
-				<ul>
-					<li>
-						<a href="#" class="on">제품소개</a>
-						<ul>
-							<li>
-								<h3>자전거</h3>
-								<ul>
-									<li><a href="#">2017</a></li>
-									<li><a href="#">2016</a></li>
-									<li><a href="#">2015</a></li>
-									<li><a href="#">프레임(Frame)</a></li>
+		<header id="header_wrap">
+			<p class="skip_menu"><a href="#container">본문 바로가기</a></p>
+			<div id="header">
+				<h1><a href="index.html"><img src="images/common/header_logo.png" alt="스캇로고"></a></h1>
+				<div class="utilmenu">
+					<h2 class="blind">유틸메뉴</h2>
+					<ul class="clearFix">
+						<li><a href="#">LOG IN</a></li>
+						<li><a href="#">JOIN</a></li>
+					</ul>
+					<p>
+						<input type="text" name="sch_text" id="sch_text" title="전체메뉴검색" />
+						<input type="image" src="images/common/btn_header_sch.png" alt="전체메뉴검색버튼" />
+					</p>
+				</div>
+				<div class="gnb">
+					<h2 class="blind">메인메뉴</h2>
+					<ul>
+						<li>
+							<a href="#" class="on">제품소개</a>
+							<div>
+								<img src="images/common/bg_gnb_cyc.png" alt="스캇자전거">
+								<ul class="info_prd_wrap">
+									<li>
+										<h3>자전거</h3>
+										<ul>
+											<li><a href="#">2017</a></li>
+											<li><a href="#">2016</a></li>
+											<li><a href="#">2015</a></li>
+											<li><a href="#">프레임(Frame)</a></li>
+										</ul>
+									</li>
+									<li>
+										<h3>의류</h3>
+										<ul>
+											<li><a href="#">자전거의류</a></li>
+											<li><a href="#">캐쥬얼의류</a></li>
+											<li><a href="#">장갑</a></li>
+											<li><a href="#">액세서리</a></li>
+										</ul>
+									</li>
+									<li>
+										<h3>용품/액세서리</h3>
+										<ul>
+											<li><a href="#">헬멧</a></li>
+											<li><a href="#">신발</a></li>
+											<li><a href="#">가방</a></li>
+											<li><a href="#">보호대</a></li>
+											<li><a href="#">선글라스</a></li>
+											<li><a href="#">컴퍼넌트/파트</a></li>
+											<li><a href="#">액세서리</a></li>
+										</ul>
+									</li>
+									<li>
+										<h3>싱크로스</h3>
+										<ul>
+											<li><a href="#">휠</a></li>
+											<li><a href="#">컴퍼넌트</a></li>
+											<li><a href="#">액세서리</a></li>
+											<li><a href="#">가방</a></li>
+											<li><a href="#">기타파트</a></li>
+										</ul>
+									</li>
 								</ul>
-							</li>
-							<li>
-								<h3>의류</h3>
-								<ul>
-									<li><a href="#">자전거의류</a></li>
-									<li><a href="#">캐쥬얼의류</a></li>
-									<li><a href="#">장갑</a></li>
-									<li><a href="#">액세서리</a></li>
-								</ul>
-							</li>
-							<li>
-								<h3>용품/액세서리</h3>
-								<ul>
-									<li><a href="#">헬멧</a></li>
-									<li><a href="#">신발</a></li>
-									<li><a href="#">가방</a></li>
-									<li><a href="#">보호대</a></li>
-									<li><a href="#">선글라스</a></li>
-									<li><a href="#">컴퍼넌트/파트</a></li>
-									<li><a href="#">액세서리</a></li>
-								</ul>
-							</li>
-							<li>
-								<h3>싱크로스</h3>
-								<ul>
-									<li><a href="#">휠</a></li>
-									<li><a href="#">컴퍼넌트</a></li>
-									<li><a href="#">액세서리</a></li>
-									<li><a href="#">가방</a></li>
-									<li><a href="#">기타파트</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li><a href="#">팀/선수</a></li>
-					<li><a href="#">취급판매점</a></li>
-					<li>
-						<a href="#">고객지원</a>
-						<ul>
-							<li><a href="#">F&Q</a></li>
-							<li><a href="#">1:1 문의</a></li>
-							<li><a href="#">A/S 안내</a></li>
-							<li><a href="#">자전거 정품등록</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">커뮤니티</a>
-						<ul>
-							<li><a href="#">공지/보도</a></li>
-							<li><a href="#">이벤트</a></li>
-							<li><a href="#">자료실</a></li>
-						</ul>
-					</li>
-				</ul>
+							</div>
+						</li>
+						<li><a href="#">팀/선수</a></li>
+						<li><a href="#">취급판매점</a></li>
+						<li class="li_common">
+							<a href="#">고객지원</a>
+							<ul class="ul_common">
+								<li><a href="#">F&Q</a></li>
+								<li><a href="#">1:1 문의</a></li>
+								<li><a href="#">A/S 안내</a></li>
+								<li><a href="#">자전거 정품등록</a></li>
+							</ul>
+						</li>
+						<li class="li_common">
+							<a href="#">커뮤니티</a>
+							<ul class="ul_common">
+								<li><a href="#">공지/보도</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</header>
 		<div id="slideBanner">
