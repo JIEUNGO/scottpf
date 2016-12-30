@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+#slideBanner{position: relative;max-width:1840px;margin:0 auto;}
+#slideBanner .frame{background-color: yellow;}
+#slideBanner .slideContentsWrap{position: relative;}
+#slideBanner .slideContentsWrap .pos_a1,.pos_a2,.pos_a3{font-weight: bold;font-family: arial;color: #fff;font-style: italic;}
+#slideBanner .slideContentsWrap .pos_a1{position: absolute;top:75.9756%;right: 10%;}
+#slideBanner .slideContentsWrap span:first-child{font-size: 47px;line-height: 50px;}
+#slideBanner .slideContentsWrap span+span{font-size: 23px;}
+#slideBanner .slideContentsWrap .pos_a2,.pos_a3{position: absolute;top:16.6056%;left:10%;}
+/* @media (max-width:800px) {
+	#slideBanner .slideContentsWrap span{
+		font-size: 29px;
+	}
+} */
+#slideBanner button{position: absolute;top:43%;width:35px ;height:64px ;text-indent: -9999px;}
+#slideBanner .btn_vs_prev{left:10px;background: url(../images/main/btn_arrow_1.png) 0 0 no-repeat;}
+#slideBanner .btn_vs_next{right:10px;background: url(../images/main/btn_arrow_2.png) 0 0 no-repeat;}
+#container .pro_wrap{width: 100%;}
+#container .pro_wrap h3{background: url(../images/main/bg_line_ourpro.png) 0 55% repeat-x;max-width: 1840px;}
+#container .pro_wrap h3 span{display: block;width: 315px;padding: 48px 0 30px 37px;line-height: 35px;margin: 0 auto;background: #fff url(../images/main/bg_ourpd_1.png) 30px 48px no-repeat;font-size: 30px;font-family: arial;font-weight: bold;text-align: center;}
+
+.pro_wrap .our_pro li{float: left;width: 20%;position: relative;}
+.pro_wrap .our_pro li a:before{content: "";background-color:rgba(0,0,0,0.5);transition:all 0.5s linear;z-index:100;position:absolute;top:0;left: 0;width: 100%;height: 100%;}
+.pro_wrap .our_pro li a:hover:before,.pro_wrap .our_pro li a:focus:before{opacity:0;}
+.pro_wrap .our_pro li span{color:#fff;position: absolute;top:0;left: 0;width: 100%;padding-top: 60%;text-align: center;height: 100%;font-size: 25px;font-family: arial;}
+/* .pro_wrap > div{display: table;width:100%;border: 1px solid #000;}
+.pro_wrap > div > ul{display: table-row;}
+.pro_wrap > div > ul > li {display: table-cell;width:20%;height:330px;position: relative;background-color:#ff0;overflow: hidden;vertical-align: middle;text-align: center;transition:all 0.5s linear;}
+.pro_wrap > div > ul > li a{display: block;width:100%;padding-bottom:139.406%;height:0;}
+.pro_wrap > div > ul > li img{position: absolute;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;}
+.pro_wrap > div > ul > li span{display: none;color: #fff;}
+
+@media (max-width:1000px) {
+	.pro_wrap > div > ul > li{height:200px;}	
+} */
+
