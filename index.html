@@ -1,109 +1,10 @@
-<!doctype html>
-<html lang="ko">
- <head>
-  <meta charset="UTF-8">
-  <meta name="Author" content="고지은">
-  <meta name="Keywords" content="스캇노스아시아 홈페이지 포트폴리오">
-  <meta name="Description" content="포트폴리오,스캇,scott">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-  <link rel="shortcut icon" type="image/x-icon" href="images/common/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="css/common.css">
-  <script type="text/javascript" src="js/html5shiv.min.js"></script>
-  <title>Scott North Asia</title>
+<? include "inc/top.html"?>
+  <title>SCOTT North Asia</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
  </head>
  <body>
 	<div id="wrap">
-		<header id="header_wrap">
-			<p class="skip_menu"><a href="#container">본문 바로가기</a></p>
-			<div id="header">
-				<h1><a href="index.html"><img src="images/common/header_logo.png" alt="스캇로고"></a></h1>
-				<div class="utilmenu">
-					<h2 class="blind">유틸메뉴</h2>
-					<ul class="clearFix">
-						<li><a href="#">LOG IN</a></li>
-						<li><a href="#">JOIN</a></li>
-					</ul>
-					<p>
-						<input type="text" name="sch_text" id="sch_text" title="전체메뉴검색" />
-						<input type="image" src="images/common/btn_header_sch.png" alt="전체메뉴검색버튼" />
-					</p>
-				</div>
-				<div class="gnb">
-					<h2 class="blind">메인메뉴</h2>
-					<ul>
-						<li>
-							<a href="#" class="on">제품소개</a>
-							<div>
-								<img src="images/common/bg_gnb_cyc.png" alt="스캇자전거">
-								<ul class="info_prd_wrap">
-									<li>
-										<h3>자전거</h3>
-										<ul>
-											<li><a href="#">2017</a></li>
-											<li><a href="#">2016</a></li>
-											<li><a href="#">2015</a></li>
-											<li><a href="#">프레임(Frame)</a></li>
-										</ul>
-									</li>
-									<li>
-										<h3>의류</h3>
-										<ul>
-											<li><a href="#">자전거의류</a></li>
-											<li><a href="#">캐쥬얼의류</a></li>
-											<li><a href="#">장갑</a></li>
-											<li><a href="#">액세서리</a></li>
-										</ul>
-									</li>
-									<li>
-										<h3>용품/액세서리</h3>
-										<ul>
-											<li><a href="#">헬멧</a></li>
-											<li><a href="#">신발</a></li>
-											<li><a href="#">가방</a></li>
-											<li><a href="#">보호대</a></li>
-											<li><a href="#">선글라스</a></li>
-											<li><a href="#">컴퍼넌트/파트</a></li>
-											<li><a href="#">액세서리</a></li>
-										</ul>
-									</li>
-									<li>
-										<h3 class="syncros_h3">싱크로스</h3>
-										<ul>
-											<li><a href="#">휠</a></li>
-											<li><a href="#">컴퍼넌트</a></li>
-											<li><a href="#">액세서리</a></li>
-											<li><a href="#">가방</a></li>
-											<li><a href="#">기타파트</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="#">팀/선수</a></li>
-						<li><a href="#">취급판매점</a></li>
-						<li class="li_common">
-							<a href="#">고객지원</a>
-							<ul class="ul_common">
-								<li><a href="#">F&Q</a></li>
-								<li><a href="#">1:1 문의</a></li>
-								<li><a href="#">A/S 안내</a></li>
-								<li><a href="#">자전거 정품등록</a></li>
-							</ul>
-						</li>
-						<li class="li_common">
-							<a href="#">커뮤니티</a>
-							<ul class="ul_common">
-								<li><a href="#">공지/보도</a></li>
-								<li><a href="#">이벤트</a></li>
-								<li><a href="#">자료실</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</header>
+		<? include "inc/header.html"?>
 		<div id="slideBanner">
 			<h2 class="blind">슬라이드배너</h2>
 			<div class="frame">
@@ -159,139 +60,63 @@
 			<div class="pro_wrap">
 				<h3><span>OUR PRODUCT</span></h3>
 					<div>
-						<ul class="our_pro">
-							<li><a href="#"><span>MTB</span><img src="images/main/bg_main_mtb_ov.png" alt="산악바이크"></a></li>
-							<li><a href="#"><span>ROAD</span><img src="images/main/bg_main_road_ov.png" alt="로드바이크"></a></li>
-							<li><a href="#"><span>Syncros</span><img src="images/main/bg_main_syncros_ov.png" alt="싱크로스"></a></li>
-							<li><a href="#"><span>APPAREL</span><img src="images/main/bg_main_apparel_ov.png" alt="의류"></a></li>
-							<li><a href="#"><span>EQUIPMENT</span><img src="images/main/bg_main_equipment_ov.png" alt="장비"></a></li>
+						<ul class="our_pro clearFix">
+							<li><a href="#"><span>MTB</span><img src="images/main/bg_main_mtb.png" alt="산악바이크"></a></li>
+							<li><a href="#"><span>ROAD</span><img src="images/main/bg_main_road.png" alt="로드바이크"></a></li>
+							<li class="syn_img"><a href="#"><img src="images/main/icon_syncros.png" alt="syncros"><img src="images/main/bg_main_syncros.png" alt="싱크로스"></a></li>
+							<li><a href="#"><span>APPAREL</span><img src="images/main/bg_main_apparel.png" alt="의류"></a></li>
+							<li><a href="#"><span>EQUIPMENT</span><img src="images/main/bg_main_equipment.png" alt="장비"></a></li>
 						</ul>
 					</div>
 			</div>
-			<div class="news">
-				<h3>NEWS</h3>
-					<img src="images/main/news_1.png" alt="HUNT FOR GLORY">
-					<div>
-						<h4>HUNT FOR GLORY</h4>
-						<p>
-							2016 년 8 월 21 일 N1NO Schurter은<br />
-							2008 년 베이징에서 동메달을 획득하고 2012 년에<br />
-							런던의 은메달을 획득 한 후 리우데 자네이루에서<br />
-							금메달을 획득 한 올림픽 메달의 컬렉션을 완성했습니다.
-						</p>
-						<p class="btn_more">READ MORE</p>
-					</div>
-					<img src="images/main/news_2.png" alt="IAM CYCLING TEAM">
-					<div>
-						<h4>IAM CYCLING TEAM</h4>
-						<p>
-							IAM 사이클링은 프로 컨티넨탈 등급에 등록된<br />
-							유일한 프로페셔널 스위스 사이클링팀입니다.<br />
-							Thomas LOFKVIST, Heinrich HAUSSLER 그리고<br />
-							스위스 출신인 Johann TSCHOPP와 같은 정상급<br />
-							선수들로 이루어진 이 팀은 스캇스포츠와 함께<br />
-							2013년 부터 강대한 포부를 안고 출발합니다. 팀과<br />
-							스캇스포츠는 제품개발과 마케팅 전개 뿐 아니라<br />
-							월드투어에서 선전을 향해 긴밀히 협조할 것입니다.
-						</p>
-						<p class="btn_more">READ MORE</p>
-					</div>
-			</div>
-			<div class="notice">
-				<h3>NOTICE</h3>
-				<div>
-					<img src="images/main/bg_notice.png" alt="공지사항">
-					<div>
-						<h4>공지사항</h4>
-						<ul>
-							<li><a href="#">[ADDICT]2016년식 FL1.0 OFFSET 27.2MM SEA...</a><time datetime="2016-06-07">2016.06.07</time></li>
-							<li><a href="#">2016.04.19 시스템 점검이 있습니다.</a><time datetime="2016-06-07">2016.06.02</time></li>
-							<li><a href="#">2010년식 프레임의 워런티가 2015년 12월 31일부로 종료</a><time datetime="2016-06-07">2016.05.28</time></li>
-							<li><a href="#">2016 스피드스터 입고</a><time datetime="2016-06-07">2016.05.30</time></li>
-							<li><a href="#">2013년 완성차 40% 세일</a><time datetime="2016-06-07">2016.03.10</time></li>
-							<li><a href="#">2014년 완성차 및 프레임 20% 할인</a><time datetime="2016-06-07">2016.02.17</time></li>
-							<li><a href="#">2009년식 프레임의 워런티가 2014년 12월 31일부로 종료</a><time datetime="2016-06-07">2016.01.06</time></li>
-							<li><a href="#">SR Suntour NCX Forks, SR Suntour NEX F...</a><time datetime="2016-06-07">2015.12.27</time></li>
-							<li><a href="#">세바스티안 키엔레, 아이언맨 세계선수권 우승 [바이크왓]</a><time datetime="2016-06-07">2015.12.20</time></li>
-						</ul>
-						<p class="btn_more_notice">더보기</p>
+			<div class="content">
+				<div class="news">
+					<h3><span>NEWS</span></h3>
+						<div class="news_1 clearFix">
+							<a href="#"><img src="images/main/news_1.png" alt="HUNT FOR GLORY"></a>
+							<div>
+								<h4>HUNT FOR GLORY<br/>-</h4>
+								<p>
+									2016 년 8 월 21 일 N1NO Schurter은 2008 년 베이징에서 동메달을 획득하고 2012 년에 런던의 은메달을 획득 한 후 리우데 자네이루에서 금메달을 획득 한 올림픽 메달의 컬렉션을 완성했습니다.
+								</p>
+								<p class="btn_more"><a href="#">READ MORE</a></p>
+							</div>
+						</div>
+						<div class="news_2 clearFix">
+							<a href="#"><img src="images/main/news_2.png" alt="IAM CYCLING TEAM"></a>
+							<div>
+								<h4>IAM CYCLING TEAM<br/>-</h4>
+								<p>
+									IAM 사이클링은 프로 컨티넨탈 등급에 등록된 유일한 프로페셔널 스위스 사이클링팀입니다. Thomas LOFKVIST, Heinrich HAUSSLER 그리고 스위스 출신인 Johann TSCHOPP와 같은 정상급 선수들로 이루어진 이 팀입니다.
+								</p>
+								<p class="btn_more"><a href="#">READ MORE</a></p>
+							</div>
+						</div>
+				</div>
+				<div class="notice">
+					<h3><span>NOTICE</span></h3>
+					<div class="clearFix">
+						<img src="images/main/bg_notice.png" alt="공지사항">
+						<div>
+							<h4>공지사항</h4>
+							<ul>
+								<li><a href="#">[ADDICT]2016년식 FL1.0 OFFSET 27.2MM</a><time datetime="2016-06-07">2016.06.07</time></li>
+								<li><a href="#">2016.04.19 시스템 점검이 있습니다.</a><time datetime="2016-06-02">2016.06.02</time></li>
+								<li><a href="#">2010년식 프레임의 워런티가 2015년 12월 31일부로 종료</a><time datetime="2016-05-28">2016.05.28</time></li>
+								<li><a href="#">2016 스피드스터 입고</a><time datetime="2016-05-30">2016.05.30</time></li>
+								<li><a href="#">2013년 완성차 40% 세일</a><time datetime="2016-03-10">2016.03.10</time></li>
+								<li><a href="#">2014년 완성차 및 프레임 20% 할인</a><time datetime="2016-02-17">2016.02.17</time></li>
+								<li><a href="#">2009년식 프레임의 워런티가 2014년 12월 31일부로 종료</a><time datetime="2016-01-06">2016.01.06</time></li>
+								<li><a href="#">SR Suntour NCX Forks, SR Suntour NEX</a><time datetime="2015-12-27">2015.12.27</time></li>
+								<li><a href="#">세바스티안 키엔레, 아이언맨 세계선수권 우승 [바이크왓]</a><time datetime="2015-12-20">2015.12.20</time></li>
+							</ul>
+							<p><a href="#">더보기</a></p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer id="footer_wrap">
-			<h3><a href="index.html"><img src="images/common/footer_logo.png" alt="스캇로고"></a></h3>
-			<div class="sns">
-				<a href="#"><img src="images/common/icon_facebook.png" alt="페이스북"></a>
-				<a href="#"><img src="images/common/icon_insta.png" alt="인스타그램"></a>
-				<a href="#"><img src="images/common/icon_blog.png" alt="블로그"></a>
-			</div>
-			<div class="footer">
-				<div class="store_ft">
-					<h4>대리점찾기</h4>
-					<p>
-					<input type="text" name="store_ft_1" id="store_ft_1" title="대리점찾기" />
-					<input type="image" src="images/common/footer_btn_sch_1.png" alt="대리점찾기검색" /></p>
-					<p>
-						<select name="addr_1" id="addr_1" title="시/도">
-							<option value="">시/도</option>
-							<option value="서울시">서울시</option>
-						</select>
-						<select name="addr_2" id="addr_2" title="군/구">
-							<option value="">군/구</option>
-							<option value="구로구">구로구</option>
-						</select>
-						<input type="submit" value="btn_search_ft">
-					</p>
-				</div>
-				<ul>
-					<li>
-						<h4>ABOUT US</h4>
-						<ul>
-							<li><a href="#">연혁</a></li>
-							<li><a href="#">채용</a></li>
-							<li><a href="#">법률</a></li>
-							<li><a href="#">개인정보보호정책</a></li>
-							<li><a href="#">안전 및 회수</a></li>
-							<li><a href="#">유통업체 목록</a></li>
-						</ul>
-					</li>
-					<li>
-						<h4>PRODUCT</h4>
-						<ul>
-							<li><a href="#">제품 카탈로그</a></li>
-							<li><a href="#">제품 기록 보관</a></li>
-							<li><a href="#">자전거 설명서</a></li>
-							<li><a href="#">품질 보증</a></li>
-							<li><a href="#">Bike Finder</a></li>
-							<li><a href="#">자전거 등록</a></li>
-						</ul>
-					</li>
-					<li>
-						<h4>CUSTOMER</h4>
-						<ul>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">제휴문의</a></li>
-							<li><a href="#">Newletter</a></li>
-							<li><a href="#">Dealer Locator</a></li>
-							<li><a href="#">이용약관</a></li>
-							<li><a href="#">개인정보취급방법</a></li>
-						</ul>
-					</li>
-					<li>
-						<h4>SITEMAP</h4>
-					</li>
-					<li>
-						<h4>TECHNOLOGY</h4>
-					</li>
-				</ul>
-				<address>
-					(주)스캇노스코리아 | 서울시 성북구 오패산로 37 영원빌딩 | 대표: 성기학<br />
-					TEL : 1544 - 3603 FAX : 02-918-6606 E-MAIL : INFO@SCOTT-KOREA.COM 사업자등록번호 : 129-86-63732 정보관리책임자 : 서영노
-				</address>
-				<p class="copy">COPYRIGHT SCOTT NORTH ASIA LTD. ALL RIGHTS RESERVED</p>				
-			</div>
-		</footer>
+		<? include "inc/footer.html" ?>
 	</div>
  </body>
 </html>

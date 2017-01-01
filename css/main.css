@@ -1,37 +1,67 @@
 @charset "utf-8";
 
-#slideBanner{position: relative;max-width:1840px;margin:0 auto;}
-#slideBanner .frame{background-color: yellow;}
+#slideBanner{position: relative;width: 100%;margin:0 auto;}
+#slideBanner img{width: 100%;}
 #slideBanner .slideContentsWrap{position: relative;}
 #slideBanner .slideContentsWrap .pos_a1,.pos_a2,.pos_a3{font-weight: bold;font-family: arial;color: #fff;font-style: italic;}
-#slideBanner .slideContentsWrap .pos_a1{position: absolute;top:75.9756%;right: 10%;}
-#slideBanner .slideContentsWrap span:first-child{font-size: 47px;line-height: 50px;}
-#slideBanner .slideContentsWrap span+span{font-size: 23px;}
+#slideBanner .slideContentsWrap .pos_a1{position: absolute;top:75.9756%;right: 10%;text-align: right;}
+#slideBanner .slideContentsWrap .pos_a1>span:first-child{margin-bottom: 5px;display: block;}
+#slideBanner .slideContentsWrap span:first-child{font-size: 66px;line-height: 70px;}
+#slideBanner .slideContentsWrap span+span{font-size: 30px;}
 #slideBanner .slideContentsWrap .pos_a2,.pos_a3{position: absolute;top:16.6056%;left:10%;}
-/* @media (max-width:800px) {
-	#slideBanner .slideContentsWrap span{
-		font-size: 29px;
-	}
-} */
 #slideBanner button{position: absolute;top:43%;width:35px ;height:64px ;text-indent: -9999px;}
 #slideBanner .btn_vs_prev{left:10px;background: url(../images/main/btn_arrow_1.png) 0 0 no-repeat;}
 #slideBanner .btn_vs_next{right:10px;background: url(../images/main/btn_arrow_2.png) 0 0 no-repeat;}
-#container .pro_wrap{width: 100%;}
-#container .pro_wrap h3{background: url(../images/main/bg_line_ourpro.png) 0 55% repeat-x;max-width: 1840px;}
-#container .pro_wrap h3 span{display: block;width: 315px;padding: 48px 0 30px 37px;line-height: 35px;margin: 0 auto;background: #fff url(../images/main/bg_ourpd_1.png) 30px 48px no-repeat;font-size: 30px;font-family: arial;font-weight: bold;text-align: center;}
+.pro_wrap{width: 100%;}
+.pro_wrap h3{background: url(../images/main/bg_line.png) 0 55% repeat-x;width: 98%;margin: 0 auto;}
+.pro_wrap h3 span{display: block;width: 315px;padding: 48px 0 30px 37px;line-height: 35px;margin: 0 auto;background: #fff url(../images/main/bg_ourpd_1.png) 30px 48px no-repeat;font-size: 30px;font-family: arial;font-weight: bold;text-align: center;}
 
 .pro_wrap .our_pro li{float: left;width: 20%;position: relative;}
-.pro_wrap .our_pro li a:before{content: "";background-color:rgba(0,0,0,0.5);transition:all 0.5s linear;z-index:100;position:absolute;top:0;left: 0;width: 100%;height: 100%;}
+.pro_wrap .our_pro li img{width: 100%;}
+.pro_wrap .our_pro li a:before{content: "";background-color:rgba(0,0,0,0.5);transition:all 0.3s linear;z-index:100;position:absolute;top:0;left: 0;width: 100%;height: 100%;}
 .pro_wrap .our_pro li a:hover:before,.pro_wrap .our_pro li a:focus:before{opacity:0;}
-.pro_wrap .our_pro li span{color:#fff;position: absolute;top:0;left: 0;width: 100%;padding-top: 60%;text-align: center;height: 100%;font-size: 25px;font-family: arial;}
-/* .pro_wrap > div{display: table;width:100%;border: 1px solid #000;}
-.pro_wrap > div > ul{display: table-row;}
-.pro_wrap > div > ul > li {display: table-cell;width:20%;height:330px;position: relative;background-color:#ff0;overflow: hidden;vertical-align: middle;text-align: center;transition:all 0.5s linear;}
-.pro_wrap > div > ul > li a{display: block;width:100%;padding-bottom:139.406%;height:0;}
-.pro_wrap > div > ul > li img{position: absolute;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;}
-.pro_wrap > div > ul > li span{display: none;color: #fff;}
+.pro_wrap .our_pro li span{color:#fff;position: absolute;top:0;left: 0;width: 100%;padding-top: 60%;text-align: center;height: 100%;font-size: 36px;font-family: arial;}
+.our_pro .syn_img img:first-child{position: absolute;top:40%;left: 20%;width: 60%;}
 
-@media (max-width:1000px) {
-	.pro_wrap > div > ul > li{height:200px;}	
-} */
 
+.news h3,.notice h3{padding: 48px 0 30px 0;background: url(../images/main/bg_line.png) 0 55% repeat-x;}
+.news h3 span,.notice h3 span{font-size: 30px;font-family: arial;font-weight: bold;text-align: center;background-color: #fff;margin: 0 auto;display: block;width: 150px;}
+.news_1{margin-bottom: 40px;}
+.news_1 a,.news_2 a{overflow: hidden;width: 62.8333%;background-color: yellow;}
+.news_1 img{width: 100%;}
+.news_1 a img,.news_2 a img{transition: transform .5s,-webkit-transform .5s;}
+.news_1 a:hover img,.news_2 a:hover img{transform: scale(1.2) rotate(1deg);-ms-transform: scale(1.2) rotate(1deg);-moz-transform: scale(1.2) rotate(1deg);-webkit-transform: scale(1.2) rotate(1deg);-o-transform: scale(1.2) rotate(1deg);}
+.news_1 div,.news_2 div{width: 32.1666%;}
+.news_1 a,.news_2 div{margin-right: 2.5%;}
+.news_2 a,.news_1 div{margin-left: 2.5%;}
+.news_1 div{padding-right: 3.3333%;}
+.news_2 div{padding-left: 3.3333%;}
+.news_1 a,.news_2 div{float: right;}
+.news_1 div,.news_2 a{float: left;}
+.news_2 div,.news_1 div{padding-top:33px;}
+.news_1 h4,.news_2 h4{font-size: 23px;font-weight: bold;font-family: arial;}
+.news_1 p,.news_2 p{font-size: 14px;line-height: 24px;}
+
+.btn_more a{display: block;width: 141px;height: 46px;padding: 11px 0 11px 32px;background: url(../images/main/bg_read_more.png) 0 0 no-repeat;font-size: 15px;font-family: arial;font-style: italic;font-weight: bold;color:#000;margin-top: 34px;}
+.notice>div{background-color: #dddddd;padding: 38px 3.8333%;margin: 0 2.5% 200px 2.5%;}
+.notice img{float: left;width: 47.5%;}
+.notice img+div{float: right;width: 49.2%;position: relative;}
+.notice h4{padding-left: 12px;padding-bottom: 14px;margin-bottom: 21px;font-size: 18px;font-weight: bold;background: url(../images/main/bg_line.png) 0 bottom repeat-x;}
+.notice ul{padding-left: 12px;}
+.notice li{overflow: hidden;margin-top: 12px;}
+.notice li:first-child{margin: 0;}
+.notice li a{float: left;}
+.notice li time{float: right;padding-right: 12px;}
+.notice p a{position: absolute;top:5px;right: 12px;text-indent: -9999px;background: url(../images/main/btn_more_notice.png) 0 0 no-repeat;width: 12px;height: 12px;display: block;}
+
+@media (max-width: 1420px){
+	#slideBanner .slideContentsWrap span:first-child{font-size: 45px;line-height: 50px;}
+	#slideBanner .slideContentsWrap span+span{font-size: 20px;}
+	.pro_wrap .our_pro li span{font-size: 28px;}
+}
+@media (max-width: 980px){
+	.pro_wrap .our_pro li span{font-size: 20px;}
+	.news_2 div,.news_1 div{padding-top:0;}
+	.news_1 h4,.news_2 h4{font-size: 20px;font-weight: bold;font-family: arial;}
+	.btn_more a{margin-top: 10px;}
+}
