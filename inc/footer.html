@@ -17,19 +17,26 @@
 			<h3><a href="index.html"><img src="images/common/footer_logo.png" alt="스캇로고"></a></h3>
 			<div class="store_ft">
 				<h4>대리점 찾기</h4>
-				<p>
-				<input type="text" name="store_ft_1" id="store_ft_1" title="대리점찾기" /><input type="image" src="images/common/footer_btn_sch_1.png" alt="대리점찾기검색" /></p>
-				<p>
-					<select name="addr_1" id="addr_1" title="시/도">
-						<option value="">시/도</option>
-						<option value="서울시">서울시</option>
-					</select>
-					<select name="addr_2" id="addr_2" title="군/구">
-						<option value="">군/구</option>
-						<option value="구로구">구로구</option>
-					</select>
-					<input type="submit" value="Search" title="대리점 지역 검색" />
-				</p>
+				<form action="#">
+					<fieldset>
+						<legend>대리점 주소검색</legend>
+						<input type="text" name="store_ft_1" id="store_ft_1" title="대리점찾기" /><input type="image" src="images/common/footer_btn_sch_1.png" alt="대리점찾기검색" />
+					</fieldset>
+				</form>
+				<form action="#">
+					<fieldset>
+						<legend>대리점 지역 주소검색</legend>
+						<select name="addr_1" id="addr_1" title="시/도" class="addr_1">
+							<option value="">시/도</option>
+							<option value="서울시">서울시</option>
+						</select>
+						<select name="addr_2" id="addr_2" title="군/구">
+							<option value="">군/구</option>
+							<option value="구로구">구로구</option>
+						</select>
+						<input type="submit" value="Search" title="대리점 지역 검색" />
+					</fieldset>
+				</form>
 			</div>
 			<ul class="ft_category">
 				<li>
