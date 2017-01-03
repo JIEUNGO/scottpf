@@ -186,8 +186,8 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .sns{width: 210px;margin: 0 auto;padding:27px 0;text-align: center;}
 .sns li{float: left;margin-left: 27px;}
 .sns li:first-child{margin: 0;}
-.footer{background-size: cover;-ms-behavior:url('backgroundsize.min.htc');background: url(../images/common/bg_footer.png) center center no-repeat;}
-.footer>div{position: relative;max-width: 1200px;margin: 0 auto;height: 589px;padding: 30px;}
+.footer{-ms-behavior:url('backgroundsize.min.htc');background: url(../images/common/bg_footer.png) center center no-repeat;background-size:cover;width: 100%;}
+.footer>div{position: relative;margin: 0 auto;height: 589px;padding: 30px;max-width: 1200px;}
 .footer h3 img{position: absolute;bottom:40px;right: 2.5%;}
 .footer .store_ft{display: inline-block;float: left;}
 .footer .store_ft h4{background: url(../images/common/bg_footer_store_sch.png) 4px 0 no-repeat;padding: 12px 41px;font-size: 16px;color:#fff;font-weight: bold;}

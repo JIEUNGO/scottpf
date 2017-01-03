@@ -1,2 +1,17 @@
 @charset "utf-8";
-.log_box{width: 88.627%;border: 1px solid #cccccc;}
+.mb75{margin-bottom: 75px;}
+.log_box_wrap{margin: 0 auto;width: 100%;max-width: 863px;}
+.log_box{width: 100%;max-width: 863px;border: 1px solid #cccccc;margin: 0 auto;}
+.log_box img{width: 30.43981%;}
+.log_box img,.log_box form{float: left;}
+.log_box form{margin: 8% 0 0 45px;width: 60%;position: relative;}
+.log_box legend+p{padding-left: 87px;margin-bottom: 18px;}
+.log_box legend+p>.who_log_1{margin-left: 19px;}
+.log_box legend+p+p>label,.log_box legend+p+p+p>label{width: 53px;display: inline-block;margin-right: 30px;}
+.log_box input[type="text"],.log_box input[type="password"]{width: 63.6%;height: 28px;padding: 3px;}
+.log_box legend+p+p{margin-bottom: 14px;}
+.log_box legend+p+p+p{margin-bottom: 11px;}
+.log_box p+p+p+p{padding-left: 87px;}
+.log_box input[type="submit"]{width:67px;height: 70px;position: absolute;top:36px;right: 2%;background-color: #484942;color:#fff;font-weight: bold;}
+.log_box+p a,.log_box+p+p a{display: inline-block;width:91px;height: 31px;color:#fff;background-color: #484942;text-align: center;padding-top: 6px;margin: 27px 17px 0 0;}
+.log_box+p+p a{margin-top: 12px;}
