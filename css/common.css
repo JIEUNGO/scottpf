@@ -120,12 +120,11 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .location>h3>img{padding-top:10px;}
 .content{max-width: 1200px;margin:0 auto;}
 
-/* LNB */
-.lnb{float: left;width: 16.2%;}
-.lnb h3{font-size: 30px;font-weight: bold;margin-top:55px;}
+/* LNB,LNB_2 */
+.lnb,.lnb_2{float: left;width: 16.2%;}
+.lnb h3,.lnb_2 h3{font-size: 30px;font-weight: bold;margin-top:55px;}
 .lnb .cyc_ftl:before{content:"\e80a";font-family: 'fontello';font-size: 25px;vertical-align: middle;padding-right: 8px;padding-left: 6px;}
 .lnb .app_ftl:before{content:"";width: 28px;background: url(../images/pro_app/icon_app.png) 0 70% no-repeat;padding-right: 35px;}
-
 .lnb>ul{/* width: 194px; */border-bottom: 1px solid #cccccc;margin-top: 13px;}
 .lnb>ul>li>a{padding: 10px 31px;display: block;background: url(../images/common/bullet_lnb.png) 12px 50% no-repeat;border: 1px solid #cccccc;}
 .lnb>ul>li>a:hover,.lnb>ul>li>a:focus,.lnb>ul>li>.on{color:#fff;font-weight: bold;border: 1px solid #000;background: #000 url(../images/common/bullet_lnb_ov.png) 11px 50% no-repeat;}
@@ -135,12 +134,20 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .lnb>ul>li>ul>.active{font-weight: bold;}
 .lnb>ul>li>ul{/* display: none; */}
 
+.lnb_2 h3{padding-left: 12px;}
+.lnb_2>ul{margin-top: 13px;}
+.lnb_2>ul>li>a{display: block;border: 1px solid #cccccc;padding: 10px;border-top: none;height: 40px;}
+.lnb_2>ul>li:first-child>a{border-top: 1px solid #cccccc;}
+.lnb_2>ul>li>a:hover,.lnb_2>ul>li>a:focus,.lnb_2>ul>li>.on{background-color: #000;border: 1px solid #000;color:#fff;font-weight: bold;}
+.lnb_2>ul>li:first-child>.on{border-top: none;}
+
+
 /* 사진게시판 */
-.content_sub{float: right;max-width: 81.3%;margin-top:55px;margin-bottom: 200px;position: relative;}
+.content_sub{float: right;width: 81.3%;margin-top:55px;margin-bottom: 200px;position: relative;}
 .content_sub h4{padding-bottom: 19px;padding-left: 10px;font-size: 26px;font-weight: bold;background: url(../images/common/line_cyc_common.png) 0 bottom repeat-x;}
 .content_sub h5{padding-bottom: 8px;padding-left: 10px;margin-top: 27px;font-size: 16px;font-weight: bold;color:#555555;background: url(../images/common/line_cyc_green.png) 0 bottom repeat-x;}
 .content_sub>ul{margin-top: 67px;margin-bottom: 128px;}
-.content_sub>ul>li{float: left;margin-left: 2.5%;width: 31.25%;}
+.content_sub>ul>li{float: left;margin-left: 2.5%;width: 31.25%;position: relative;}
 .content_sub>ul>li:first-child{margin-left: 0;}
 .content_sub>ul>li>a{border: 1px solid #fff;transition:all 0.3s linear;display: inline-block;}
 .content_sub>ul>li>a:hover,.content_sub>ul>li>a:focus{border: 1px solid #4c4c4c;}
@@ -179,7 +186,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .sns{width: 210px;margin: 0 auto;padding:27px 0;text-align: center;}
 .sns li{float: left;margin-left: 27px;}
 .sns li:first-child{margin: 0;}
-.footer{background: url(../images/common/bg_footer.png) center center no-repeat;background-size: cover;-ms-behavior:url('backgroundsize.min.htc');}
+.footer{background-size: cover;-ms-behavior:url('backgroundsize.min.htc');background: url(../images/common/bg_footer.png) center center no-repeat;}
 .footer>div{position: relative;max-width: 1200px;margin: 0 auto;height: 589px;padding: 30px;}
 .footer h3 img{position: absolute;bottom:40px;right: 2.5%;}
 .footer .store_ft{display: inline-block;float: left;}
