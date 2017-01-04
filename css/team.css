@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.content h4{padding: 40px 0 10px 30px;font-size: 28px;font-weight: bold;background: url(../images/common/line_cyc_common.png) 0 bottom repeat-x;}
+.content h4{padding: 40px 0 10px 20px;font-size: 28px;font-weight: bold;background: url(../images/common/line_cyc_common.png) 0 bottom repeat-x;}
 .content ul{padding: 2.5%;}
 .content ul li{width: 48.584%;height: 550px;float: left;margin-left: 2.8333%;margin-bottom: 50px;position: relative;}
 .content ul li:first-child{margin-left: 0;}

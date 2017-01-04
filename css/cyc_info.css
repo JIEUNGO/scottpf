@@ -1,18 +1,38 @@
 @charset "utf-8";
-.fc_b{color: #232323 !important;}
+.fc_b{color: #232323 !important;line-height: 44px;font-family: arial;}
 .tac{text-align: center;}
+.bgc_tr{background-color: #e4e7d6;}
+.bgc_tr_wh{background-color: #fff !important;}
 .content{margin-bottom: 200px;}
 .content>h4{color:#3a3838;font-size: 34px;font-style: italic;font-weight: bold;text-align: center;margin-top: 73px;margin-bottom: 25px;}
 .content>p{padding: 0 2.5%;font-size: 16px;line-height: 30px;margin-bottom: 58px;}
 .content>p>span{font-size: 14px;color:#929292;font-weight: bold;display: inline-block;padding-top: 10px;}
-.spec,.geometry_size{margin-bottom: 100px;background-color: aqua;}
+.spec,.geometry_size{margin-bottom: 100px;}
 .spec h5,.geometry_size h5{background: url(../images/cyc_info/line_cyc_info_green.png) 0 50% repeat-x;margin-bottom: 60px;}
 .spec h5 a,.geometry_size h5 a{width:110px;padding-left: 30px;display: block;background: #fff url(../images/cyc_info/bullet_cyc_info.png) 0 7px no-repeat;color:#afca43;font-size: 24px;font-weight: bold;font-family: arial;}
 .geometry_size h5 a{width:280px;}
 .spec div{text-align: left;padding: 0 2.5%;}
-.spec tr{border-bottom:1px solid #cccccc;}
-.spec tr:first-child{border-top: 1px solid #cccccc;}
-.spec table th,.spec table td{padding: 18px;color: #4e4d4d;}
-.spec table th{font-weight: bold;}
-.bgc_tr{background-color: #e4e7d6;}
+.spec tr,.geometry_size .geometry tr{border-bottom:1px solid #cccccc;}
+.spec tr:first-child,.geometry_size .geometry tr:first-child{border-top: 1px solid #cccccc;}
+.spec table th,.spec table td,.geometry_size .geometry th,.geometry_size .geometry td{padding: 18px;color: #4e4d4d;}
+.spec table th,.geometry_size .geometry th{font-weight: bold;}
 .geometry_size div img{width: 60.75%;margin: 0 auto;display: block;}
+.geometry_size .geometry{margin-bottom: 99px;}
+.geometry_size td{text-align: center;}
+.geometry_size h6{font-size: 20px;font-weight: bold;font-family: arial;padding-left: 14px;margin-top: 58px;margin-bottom: 22px;background: url(../images/cyc_info/bullet_cycinfo_1.png) 0 50% no-repeat;}
+.geometry_size .size thead th{padding: 11px;background-color: #e4e7d6;border-bottom: 1px solid #585858;font-weight: bold;font-size: 16px;font-family: arial;}
+.geometry_size .size thead th:first-child,.geometry_size .size tbody th{border-right: 1px solid #585858;}
+.geometry_size .size thead th{border-left: 1px solid #000;}
+.geometry_size .size thead th:first-child{border-left: none;}
+.geometry_size .size tbody{font-family: arial;}
+.geometry_size .size tbody th,.geometry_size .size tbody td{padding: 30px 0 156px 0;font-size: 15px;font-weight: bold;}
+
+.geometry_size div{padding:  0 2.5%;}
+.geometry_size .size td{background-color: #edeee7;position: relative;}
+.geometry_size .size td span{position: absolute;top: 20px;left: 0;display: block;width: 12.5995%;background-color: #7b7c7a;color:#fff;padding: 7px;}
+.geometry_size .size td span+span{top:54px;left:3.3963%;width: 21.3644%;}
+.geometry_size .size td span+span+span{top:20px;left: 15.8862%;}
+.geometry_size .size td span+span+span+span{top:54px;left: 28.1569%;}
+.geometry_size .size td span+span+span+span+span{top:20px;left: 44.26233%}
+.geometry_size .size td span+span+span+span+span+span{top:54px;left: 59.81988%;width: 25.8562%;}
+.geometry_size .size td span+span+span+span+span+span+span{top:20px;left:77.67819%;width: 22.4%;}
