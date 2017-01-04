@@ -1,0 +1,18 @@
+@charset "utf-8";
+.fc_b{color: #232323 !important;}
+.tac{text-align: center;}
+.content{margin-bottom: 200px;}
+.content>h4{color:#3a3838;font-size: 34px;font-style: italic;font-weight: bold;text-align: center;margin-top: 73px;margin-bottom: 25px;}
+.content>p{padding: 0 2.5%;font-size: 16px;line-height: 30px;margin-bottom: 58px;}
+.content>p>span{font-size: 14px;color:#929292;font-weight: bold;display: inline-block;padding-top: 10px;}
+.spec,.geometry_size{margin-bottom: 100px;background-color: aqua;}
+.spec h5,.geometry_size h5{background: url(../images/cyc_info/line_cyc_info_green.png) 0 50% repeat-x;margin-bottom: 60px;}
+.spec h5 a,.geometry_size h5 a{width:110px;padding-left: 30px;display: block;background: #fff url(../images/cyc_info/bullet_cyc_info.png) 0 7px no-repeat;color:#afca43;font-size: 24px;font-weight: bold;font-family: arial;}
+.geometry_size h5 a{width:280px;}
+.spec div{text-align: left;padding: 0 2.5%;}
+.spec tr{border-bottom:1px solid #cccccc;}
+.spec tr:first-child{border-top: 1px solid #cccccc;}
+.spec table th,.spec table td{padding: 18px;color: #4e4d4d;}
+.spec table th{font-weight: bold;}
+.bgc_tr{background-color: #e4e7d6;}
+.geometry_size div img{width: 60.75%;margin: 0 auto;display: block;}
