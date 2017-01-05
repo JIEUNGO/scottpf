@@ -145,7 +145,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 /* 사진게시판 */
 .content_sub{float: right;width: 81.3%;margin-top:55px;position: relative;}
 .content_sub h4{padding-bottom: 19px;padding-left: 10px;font-size: 26px;font-weight: bold;background: url(../images/common/line_cyc_common.png) 0 bottom repeat-x;}
-.content_sub h5{padding-bottom: 8px;padding-left: 10px;margin-top: 27px;font-size: 16px;font-weight: bold;color:#555555;background: url(../images/common/line_cyc_green.png) 0 bottom repeat-x;}
+.content_sub .h5_gre_line{padding-bottom: 8px;padding-left: 10px;margin-top: 27px;font-size: 16px;font-weight: bold;color:#555555;background: url(../images/common/line_cyc_green.png) 0 bottom repeat-x;}
 .content_sub>.pro_list_2{margin-top: 67px;}
 .content_sub>.pro_list_2>li{float: left;margin-left: 2.5%;width: 31.25%;position: relative;}
 .content_sub>.pro_list_2>li:first-child{margin-left: 0;}
@@ -193,9 +193,9 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .footer .store_ft{display: inline-block;float: left;}
 .footer .store_ft h4{background: url(../images/common/bg_footer_store_sch.png) 4px 0 no-repeat;padding: 12px 41px;font-size: 16px;color:#fff;font-weight: bold;}
 .footer .store_ft form{margin-bottom: 6px;}
-.footer .store_ft input[type="text"]{padding: 8px;border: none;width: 350px;}
+.footer .store_ft input[type="text"]{padding: 8px;border: none;width: 350px;height: 34px;}
 .footer .store_ft input[type="image"]{width: 42px;height: 34px;padding: 5px 8px 2px 7px;background-color: #fff;}
-.footer .store_ft select{width: 194px;height: 34px;border: none;padding: 3px 10px;font-weight: bold;margin-left: 1px;}
+.footer .store_ft select{width: 194px;height: 34px;border: none;padding: 3px 0 3px 10px;font-weight: bold;margin-left: 1px;}
 .footer .store_ft .addr_1{margin-left: 0;}
 .footer .store_ft input[type="submit"]{background-color: #5c5c5c;font-weight: bold;color:#fff;padding: 10px 18px;}
 .footer .ft_category{float: right;width: 502px;margin-top: 10px;/* border: 1px solid red; */}

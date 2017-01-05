@@ -2,7 +2,7 @@
 
 .content h4{padding: 40px 0 10px 20px;font-size: 28px;font-weight: bold;background: url(../images/common/line_cyc_common.png) 0 bottom repeat-x;margin-bottom: 12px;}
 .content .area_sch_wrap{background-color: #ebebeb;}
-.content .area_sch_wrap img{padding: 12px 4%;width: 35.8%;}
+.content .area_sch_wrap img{padding: 12px 4%;width: 34.0258%;}
 .content .area_sch_wrap div{display: inline-block;vertical-align: top;margin-top: 52px;width: 59.5%;min-width:503px;}
 .content .area_sch_wrap div label{font-size: 15px;font-weight: bold;display: block;margin-bottom: 5px;}
 .content .area_sch_wrap div p{margin-bottom: 25px;}
@@ -21,7 +21,7 @@
 .content .store_list+ul>li p{float: right;}
 .content .store_list+ul>li table th,.content .store_list+ul>li table td{padding: 6px;vertical-align: top;}
 .content .store_list+ul>li table th{font-weight: bold;min-width: 77px;}
-.fwb_fcr{font-weight: bold;color: #d30000;}
+.fwb_fcr{font-weight: bold;color: #ff0000;}
 .content .store_list+ul>li p a{display: inline-block;width: 82px;height: 28px;color:#fff;font-size: 13px;padding: 5px 8px 5px 25px;background: #333333 url(../images/store/icon_detail.png) 5px 50% no-repeat;}
 .content .store_list+ul>li p a+a{background-image: url(../images/store/icon_map.png);}
 .pagenation_wrap{margin-top: 56px;margin-bottom: 200px;}
