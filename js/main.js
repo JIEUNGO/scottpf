@@ -1,0 +1,9 @@
+$(function(){
+	$(".slideContent").bxSlider({
+			auto:true,
+ 			controls:true,
+ 			pager:true,
+ 			speed:2000,
+ 			pause:6000
+	});
+});
