@@ -1,12 +1,13 @@
 @charset "utf-8";
 
 .content h4{padding: 40px 0 10px 20px;font-size: 28px;font-weight: bold;background: url(../images/common/line_cyc_common.png) 0 bottom repeat-x;}
-.content ul{padding: 2.5%;}
-.content ul li{width: 48.584%;height: 550px;float: left;margin-left: 2.8333%;margin-bottom: 50px;position: relative;}
+.content ul{padding: 2.5% 2.5% 0;}
+.content ul li{width: 48.584%;height: 480px;float: left;margin-left: 2.8333%;margin-bottom: 50px;position: relative;}
 .content ul li:first-child{margin-left: 0;}
 .content ul li a:before{content: "";background: url(../images/common/bg_op60_black.png) 0 0 repeat;/* background:#000;opacity:0.6;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60); */transition:all 0.3s linear;z-index:800;position:absolute;top:0;left: 0;width: 100%;height: 100%;display: none;}
 .content ul li a:hover:before,.content ul li a:focus:before{display: block;}
 .content ul li h5{font-size: 23px;font-weight: bold;padding: 12px 0;}
-.content ul li p{font-size: 14px;line-height: 24px;}
+.content ul li p{font-size: 14px;line-height: 24px;-webkit-line-clamp:5;height: 120px;display: -webkit-box;text-overflow: ellipsis;overflow: hidden;-webkit-box-orient:vertical;word-wrap: break-word;}
 .content ul li span{display: none;position: absolute;top:40%;left: 32%;right: 32%;width: auto;height: 50px;padding: 10px;color:#fff;font-size: 20px;font-weight: bold;z-index: 800;border: 2px solid #fff;/* background-color: #afca43; */text-align: center;}
 .content ul li a:hover span,.content ul li a:focus span{display: block;}
+.content ul li+li+li+li+li+li+li{margin-bottom: 0;}
