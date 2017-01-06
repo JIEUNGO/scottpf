@@ -15,22 +15,24 @@ background-size: 40%;}
 .content_sub .certifi+ul li{background: url(../images/member/bullet_mb_1.png) 0 50% no-repeat;padding-left: 13px;margin-top:7px;}
 .content_sub .certifi+ul li:first-child{margin-top: 0;}
 
-.certifi_phone,.certifi_email{position: fixed;top:50%;left: 60%;margin-top: -200px;margin-left: -400px;width:100%;max-width: 598px;background: #fff url(../images/member/btn_close_mb.png) 565px 16px no-repeat;z-index:100;}
+.certifi_phone,.certifi_email{position: fixed;top:50%;left: 50%;margin-top: -200px;margin-left: -300px;width:100%;max-width: 598px;z-index:100;background-color: #fff;}
 .certifi_phone>h5,.certifi_email>h5{font-size: 18px;background: url(../images/member/icon_mb_phone.png) 15px 14px no-repeat;padding: 14px 39px 18px 39px;}
 .certifi_email>h5{background: url(../images/member/icon_mb_mail.png) 14px 20px no-repeat;padding-left:41px;}
 .certifi_phone form,.certifi_email form{border-top: 1px solid #cccccc;}
 .certifi_phone form div,.certifi_email form div{padding: 15px 14px;color: #525252;border-bottom: 1px solid #cccccc;}
 .certifi_phone form span,.certifi_email form span{color:#85A212;display: block;margin-bottom: 33px;}
-.certifi_phone form p+p,.certifi_email form p+p{border-top: 1px solid #cccccc;margin-top: 32px;padding-top: 20px;text-align: center;}
-.certifi_phone form p+p input[type="text"],.certifi_phone form p+p select{width: 66px;height: 26px;}
+.certifi_phone form p+p,.certifi_email form p+p{padding-top: 20px;text-align: center;margin-top: 32px;border-top: 1px solid #cccccc;}
+.certifi_phone form p+p input[type="text"],.certifi_phone form p+p select{width: 66px;height: 26px;margin-bottom: 3px;}
 .certifi_email form p+p input[type="text"]{width: 151px;padding: 3px;}
-.certifi_phone form p+p a,.certifi_email form p+p a{display:inline-block;height:26px;background-color: #85A212;vertical-align: middle;padding: 3px 5px;color:#fff;margin-left: 5px;}
-.certifi_phone form p+p+p{border-top: none;padding: 0;margin-top: 11px;}
+.certifi_phone form p+p a,.certifi_email form p+p a{display:inline-block;height:26px;background-color: #85A212;vertical-align: middle;padding: 3px 5px;color:#fff;margin-left: 5px;margin-bottom: 3px;}
+.certifi_phone form p+p+p{border-top: none;padding: 0;margin-top: 8px;}
+.certifi_phone form p+p+p a{margin-bottom: 0;}
 .certifi_phone form p+p+p span{color:#525252;display:block;margin-bottom: 12px;}
-.certifi_phone form p+p+p input[type="text"]{width: 80px;}
+.certifi_phone form p+p+p input[type="text"]{width: 80px;margin-bottom: 0;}
 .certifi_phone form div+p,.certifi_email form div+p{padding: 15px;text-align: right;padding-left:0;}
 .certifi_phone input[type="submit"],.certifi_email input[type="submit"]{background-color: #333333;width: 51px;height: 30px;color:#fff;}
 .certifi_phone input[type="reset"],.certifi_email input[type="reset"]{border: 1px solid #333333;width: 51px;height: 30px;background-color: #fff;margin-left: 9px;}
+.certifi_phone button,.certifi_email button{position: absolute;top: 16px;right: 19px;width: 11px;height: 11px;text-indent: -9999px;background: url(../images/member/btn_close_mb.png) 0 0 no-repeat;}
 
 .certifi_email{display: none;}
 @media (max-width:640px) {

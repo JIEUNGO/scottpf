@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 #slideBanner{position: relative;width: 100%;margin:0 auto;}
 #slideBanner img{width: 100%;}
 #slideBanner .slideContentsWrap{position: relative;}
@@ -52,10 +51,10 @@
 .notice img+div{float: right;width: 49.2%;position: relative;}
 .notice h4{padding-left: 12px;padding-bottom: 14px;margin-bottom: 21px;font-size: 18px;font-weight: bold;background: url(../images/main/bg_line.png) 0 bottom repeat-x;}
 .notice ul{padding-left: 12px;}
-.notice li{overflow: hidden;margin-top: 12px;}
+.notice li{overflow: hidden;margin-top: 12px;position: relative;}
 .notice li:first-child{margin: 0;}
-.notice li a{float: left;overflow:hidden; text-overflow:ellipsis;-o-text-overflow:ellipsis;-ms-text-overflow:ellipsis; white-space:nowrap;display: block;}
-.notice li time{float: right;padding-right: 12px;}
+.notice li a{overflow:hidden; text-overflow:ellipsis;text-overflow:ellipsis; white-space:nowrap;display: block;margin-right: 100px;}
+.notice li time{position: absolute;top:0;right: 12px;}
 .notice p a{position: absolute;top:5px;right: 12px;text-indent: -9999px;background: url(../images/main/btn_more_notice.png) 0 0 no-repeat;width: 12px;height: 12px;display: block;}
 
 @media (max-width: 1420px){
