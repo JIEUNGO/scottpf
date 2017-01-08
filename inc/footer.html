@@ -15,18 +15,18 @@
 	<div class="footer">
 		<div>
 			<h3><a href="index.html"><img src="images/common/footer_logo.png" alt="스캇로고"></a></h3>
-			<div class="store_ft">
+			<div class="store_ft col_tablet_5">
 				<h4>대리점 찾기</h4>
 				<form action="#">
 					<fieldset>
 						<legend>대리점 주소검색</legend>
-						<input type="text" name="store_ft_1" id="store_ft_1" title="대리점찾기" /><input type="image" src="images/common/footer_btn_sch_1.png" alt="대리점찾기검색" />
+						<input type="text" name="store_ft_1" id="store_ft_1" title="대리점찾기" /><input type="submit" value="search" class="search_footer_1" title="대리점 찾기 검색" />
 					</fieldset>
 				</form>
 				<form action="#">
 					<fieldset>
 						<legend>대리점 지역 주소검색</legend>
-						<select name="addr_1" id="addr_1" title="시/도" class="addr_1">
+						<!-- <select name="addr_1" id="addr_1" title="시/도" class="addr_1">
 							<option value="">시/도</option>
 							<option value="서울시">서울시</option>
 						</select>
@@ -34,11 +34,29 @@
 							<option value="">군/구</option>
 							<option value="구로구">구로구</option>
 						</select>
-						<input type="submit" value="Search" title="대리점 지역 검색" />
+						<input type="submit" value="Search" title="대리점 지역 검색" /> -->
+						<div class="selectBox" data-select="sel">
+							<button>시/도</button>
+							<ul>
+								<li><a href="#">시/도</a></li>
+								<li><a href="#">서울시</a></li>
+								<li><a href="#">경기도</a></li>
+								<li><a href="#">구글</a></li>
+							</ul>
+							<input type="hidden" name="시/도">
+						</div>
+						<div class="selectBox" data-select="sel">
+							<button>구/군</button>
+							<ul>
+								<li><a href="#">구/군</a></li>
+							</ul>
+							<input type="hidden" name="시/도">
+						</div>
+						<input type="submit" value="Search" class="search_footer_2" title="대리점 지역 검색" />
 					</fieldset>
 				</form>
 			</div>
-			<ul class="ft_category">
+			<ul class="ft_category col_tablet_7">
 				<li>
 					<h4><a href="#">ABOUT US</a></h4>
 					<ul>
