@@ -7,7 +7,3 @@
 .btn_agree span{margin-right: 27px;}
 .btn_agree label{margin-right: 17px;}
 .btn_agree input[type="radio"]{margin-right: 4px;}
-.btn_agree+p{text-align: center;margin-top: 68px;}
-.btn_agree+p input[type="submit"],.btn_agree+p input[type="reset"]{width: 92px;padding: 8px;background-color: #333333;border: 1px solid #333333;}
-.btn_agree+p input[type="submit"]{color:#fff;}
-.btn_agree+p input[type="reset"]{background-color: #fff;border: 1px solid #333333;}

@@ -6,7 +6,9 @@
 .log_box img,.log_box form{float: left;}
 .log_box form{margin: 8% 0 0 45px;width: 60%;position: relative;}
 .log_box legend+p{padding-left: 87px;margin-bottom: 18px;}
-.log_box legend+p>.who_log_1{margin-left: 19px;}
+input[name="who_log_1"]{margin-left: 19px;}
+input[name="who_log_1"]{margin-left: 10px;}
+input[name="who_log"]+label,input[name="who_log_1"]+label,input[name="id_save"]+label{margin-left: 5px;}
 .log_box legend+p+p>label,.log_box legend+p+p+p>label{width: 53px;display: inline-block;margin-right: 30px;}
 .log_box input[type="text"],.log_box input[type="password"]{width: 63.6%;height: 28px;padding: 3px;}
 .log_box legend+p+p{margin-bottom: 14px;}
