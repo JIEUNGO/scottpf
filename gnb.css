@@ -1,0 +1,47 @@
+.gnb{padding:78px 0 0 31.6666%;}
+.gnb>ul>li{float: left;width: 12%;white-space:nowrap;}
+.gnb>ul>li+li{width: 7%;margin-left: 8%;}
+.gnb>ul>li+li+li{width: 12%;margin-left:10%}
+.gnb>ul>li>a{color:#fff;font-weight:bold;font-size: 15px;}
+/*.gnb>ul>li>a+div>img{transition:all 0.7s linear;}
+.gnb>ul>li>a.on+div>img{margin-left:80%;}*/
+
+.gnb>ul>li>a.on+div>img{animation:abcde 2s linear;left:50%;margin-left: -600px;}
+@-webkit-keyframes abcde{
+  100%{margin-left: 10%;opacity: 0;}
+}
+@-ms-keyframes abcde{
+  100%{margin-left: 10%;opacity: 0;}
+}
+@-moz-keyframes abcde{
+  100%{margin-left: 10%;opacity: 0;}
+}
+
+.gnb{height: 120px;}
+.gnb>ul>li:first-child>a,
+.gnb>ul>li+li+li+li>a{background: url(../images/common/bullet_gnb.png) right 50% no-repeat;padding-right: 21px;}
+.gnb>ul>li:first-child>a:hover,
+.gnb>ul>li:first-child>a:focus,
+.gnb>ul>li:first-child>.on,
+.gnb>ul>li+li+li+li>a:hover,
+.gnb>ul>li+li+li+li>a:focus,
+.gnb>ul>li+li+li+li>.on{background: url(../images/common/bullet_gnb_ov.png) right 50% no-repeat;padding-right: 21px;}
+.gnb>ul>li>a:hover, .gnb>ul>li>a:focus, .gnb>ul>li>.on{color:#afca43;}
+.gnb>ul>li>div{position: absolute;top:110px;left: 0;width: 100%;z-index:20;display: none;background-color: #0d0d0d;min-width: 1024px;height: 273px;}
+.gnb>ul>li>div>img{position: absolute;left: 50%;margin-left: -600px;margin-top: 30px;}
+.info_prd_wrap{position: absolute;top: 34px;left: 50%;margin-left: -222px;}
+.gnb>ul>li>div>.info_prd_wrap>li{float: left;}
+.gnb>ul>li>div>.info_prd_wrap>li>h3{color:#8da23a;font-weight: bold;margin-bottom: 24px;}
+.syncros_h3{background: url(../images/common/gnb_sub_syncros.png) 0 0 no-repeat;text-indent: -9999px;}
+.gnb>ul>li>div>.info_prd_wrap>li>ul{margin-right: 100px;}
+.gnb>ul>li>div>.info_prd_wrap>li>ul>li{margin-bottom: 5px;}
+.gnb>ul>li>div>.info_prd_wrap>li>ul>li>a{color:#e1e1e1;}
+.gnb>ul>li>div>.info_prd_wrap>li>ul>li>a:hover,.gnb>ul>li>div>.info_prd_wrap>li>ul>li>a:focus{text-decoration: underline;}
+.li_common{position: relative;}
+.ul_common{position: absolute;top:32px;left: -40px;background-color: #0d0d0d;height: 160px;width:160px;padding: 20px;}
+.ul_common>li{margin-top: 10px;}
+.ul_common>li:first-child{margin: 0;}
+.ul_common>li>a{color:#e1e1e1;}
+.ul_common>li>a:hover,.ul_common>li>a:focus{text-decoration: underline;}
+.ul_common{display: none;}
+.btn_gnb{display: none;}

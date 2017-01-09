@@ -3,7 +3,7 @@
 	2.속성,메서드 생성
 	3.객체 생성 (앞글자는 대문자로)
 */
-$(function(){
+(function(){
   /*select-box,메인 대리점찾기*/
   function InitSelect(objName,idx){ //객체 생성함수
   	this.sel_c = objName;
@@ -14,6 +14,25 @@ $(function(){
   }
   InitSelect.prototype.bindEvent = function(){
   	$(document).on("click",this.myWrap + " button",$.proxy(this.selectHanddler_1, this));
+
+    $(document).on("click",this.myWrap + " a",$.proxy(this.selectClickHanddler_1, this));      
+
+    $(document).on("click",this.myWrap + " input[type=submit]",$.proxy(this.selectMvSite_1, this));
+  }
+  InitSelect.prototype.selectMvSite_1 = function(e){
+      var myObj = $(e.target);
+      var url = myObj.closest(".selectBox").find("input[type=hidden]").val();
+      window.open("http://"+url);
+  }
+  InitSelect.prototype.selectClickHanddler_1 = function(e){
+      e.preventDefault();
+      var myObj = $(e.target);
+      var myObjText = myObj.text();
+      $(this.myWrap+" button").text(myObjText);
+      $(this.myWrap+" ul").hide();
+      var url = myObj.attr("href");
+      $(this.myWrap+" input[type=hidden]").val(url);
+      //window.open("http://"+url);
   }
   InitSelect.prototype.selectHanddler_1 = function(e){
     e.preventDefault();
@@ -31,36 +50,53 @@ $(function(){
 /*gnb*/
   $.fn.gnb = function(opt){
     var myThis = $(this);
+    var myThisClass = ".pc ."+myThis.attr("class");
+
     var activeMenu = null;
     var mouseOver = function(){
       if(activeMenu){
          activeMenu.next().stop().slideUp(300);
-         $("ul>li>a",activeMenu).attr("class"," ");             
+         activeMenu.removeClass("on");
       }
       var ts = $(this);
-      ts.next().stop().slideDown(300);     
-      $("li>a",ts).attr("class","on");
+      ts.next().stop().slideDown(300);
+      ts.addClass("on");
       activeMenu = ts;
     };
-    $("ul>div", myThis).stop().slideUp(300);
-    $(">ul>li>a",myThis).on({
+    $(myThisClass+"ul>div").stop().slideUp(300);
+    $(document).on({
       "mouseover focus":mouseOver
-    });
+    }, myThisClass+">ul>li>a");
 
     myThis.on({
       "mouseleave":function(){
         if(activeMenu){
         activeMenu.next().slideUp(300);
-        $("li>a",activeMenu).attr("class"," ");
+        activeMenu.removeClass("on");
         }
       }
     });
   }
+  $(window).on("resize",function(){
+  var b = $("body");
+   var w = $(window).width();
+   if (w >= 1024) {
+      b.attr("class","");
+      b.addClass("pc");
+   }else if (w >= 640 && w < 1024) {
+      b.attr("class","");
+      b.addClass("tablet");
+   } else {
+      b.attr("class","");
+      b.addClass("mobile");
+    }
+  });
  $(function(){
   var sel = [];
     $.each($("div[data-select=sel]"),function(i,e){
       sel[i] = new InitSelect("sel",i);
     });
   $(".gnb").gnb();
+  $(window).resize();
  });
-});
+}());
