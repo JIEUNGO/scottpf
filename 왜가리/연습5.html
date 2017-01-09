@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css"></style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  var i = 0;
+  	$(window).on("resize",function(){
+  		//console.log(++i);
+  		//console.log($(window).width());
+  		var b = $("body");
+  		var w = $(window).width();
+  		if(w >= 1024){
+  			b.attr("class","");
+  			b.addClass('pc');
+  			
+  		}else if (w >= 480 && w < 1024) {
+  			b.attr("class","");
+  			b.addClass('tablet');
+  		}else{
+  			b.attr("class","");
+  			b.addClass('mobile');
+  		}  		
+  	});
+  	$(function(){
+  		$(window).resize();
+  		$(document).on("click",".pc .btn_1",function(){   //★새롭게 등록하는 요소는 도큐먼트로 처리,ex)pc에만 적용하고 모바일에는 적용하고 싶지 않을 때 사용
+  			alert("hello");
+  		});
+  		$(document).on("click",".tablet .btn_2",function(){   //★새롭게 등록하는 요소는 도큐먼트로 처리,ex)pc에만 적용하고 모바일에는 적용하고 싶지 않을 때 사용
+  			alert("hello2");
+  		});
+  		$(document).on("click",".tablet .btn_3",function(){   //★새롭게 등록하는 요소는 도큐먼트로 처리,ex)pc에만 적용하고 모바일에는 적용하고 싶지 않을 때 사용
+  			alert("hello3");
+  		});
+  		/*$(".pc .btn_1").on("click",function(){
+  			alert("hello");
+  		})*/
+  		
+  	});
+  	
+  </script>
+  <title>SiteName|PageName</title>
+ </head>
+<!--  1024~:PC버전
+480~1024:tablet버전
+480미만: mobile 버전 -->
+ <body class="pc">
+	<button class="btn_1">PC</button>
+	<button class="btn_2">태블릿</button>
+	<button class="btn_3">모바일</button>
+ </body>
+</html>

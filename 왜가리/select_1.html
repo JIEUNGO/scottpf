@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css">
+  	*{margin: 0;padding: 0;}
+  	li{list-style: none;}
+  	a{text-decoration: none;color: #333;}
+  	body{font: 13px "맑은고딕", Malgun Gothic,sans-serif;color:#333;}
+  	button:hover{cursor: pointer;}
+  	.selectBox{display: inline-block;position: relative;}
+  	.selectBox button{width:100%;padding: 0 40px 0 10px;height: 25px;line-height: 20px;background: #fff url(images/bg_select.png) right 3px no-repeat;border:none;}
+  	.selectBox span{border: 1px solid #ccc;display: inline-block;padding-right: 2px;min-width:120px;}
+  	.selectBox ul{position: absolute;border: 1px solid #ccc;width: 100%;top: 26px;left: 0px;box-sizing: border-box;display: none;z-index: 10;background-color: #fff;}
+  	.selectBox ul a{display: block;height: 25px;line-height: 25px;}
+  	.selectBox ul a:hover,.selectBox ul a:focus{background-color:pink;color:#fff;}
+  </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  	/*
+  		1.생성함수
+  		2.속성,메서드 생성
+  		3.객체 생성 (앞글자는 대문자로)
+  	*/
+  	function InitSelect(objName,idx){ //객체 생성함수
+  		this.sel_c = objName;
+  		this.idx = idx;
+  		this.myWrap = "div[data-select="+this.sel_c+"]:eq("+this.idx+")";
+  		this.allSelectWrap = $("div[data-select]");
+  		this.bindEvent();
+  	}
+  	InitSelect.prototype.bindEvent = function(){ //메모리 절약으로function InitSelect() 이곳 안에 쓰면 여러개가 만들어지므로 밖으로 빼서 프로토 타입으로 만들어준다. 이벤트 등록 메서드
+  		//$("div[data-select=sel_1] button")
+  		$(document).on("click",this.myWrap + " button",$.proxy(this.selectHanddler_1, this)); //이벤트 등록 대상
+
+      $(document).on("click",this.myWrap + " a",$.proxy(this.selectClickHanddler_1, this));      
+
+      $(document).on("click",this.myWrap + " input[type=button]",$.proxy(this.selectMvSite_1, this));            
+  	}
+    InitSelect.prototype.selectMvSite_1 = function(e){
+      var myObj = $(e.target);
+      var url = myObj.closest(".selectBox").find("input[type=hidden]").val();
+      window.open("http://"+url);
+    }
+
+    InitSelect.prototype.selectClickHanddler_1 = function(e){
+      e.preventDefault();
+      var myObj = $(e.target);
+      var myObjText = myObj.text();
+      $(this.myWrap+" button").text(myObjText);
+      $(this.myWrap+" ul").hide();
+      var url = myObj.attr("href");
+      $(this.myWrap+" input[type=hidden]").val(url);
+      //window.open("http://"+url);
+    }
+  	InitSelect.prototype.selectHanddler_1 = function(e){
+  		var $myThis = $(e.target); //이벤트 요소의 가장 하위요소(텍스트는 제외, 돔객체- 문서객체만 선택이 된다.)
+  		var $mySelWrap = $(this.myWrap);
+  		var $myUl = $("ul",$mySelWrap);
+		if($myUl.is(":hidden")){
+			$("ul:visible",this.allSelectWrap).hide();
+				$myUl.show();
+		}else{
+				$myUl.hide();
+		}
+  		
+  		console.log(this);
+  	}
+  	$(function(){
+  		var sel = [];
+
+  		/*sel[0] = new InitSelect("sel_1");  // var sel_1 => 인스턴트 네임
+  		sel[1] = new InitSelect("sel_2");
+  		sel[2] = new InitSelect("sel_3");*/
+  		$.each($("div[data-select=sel]"),function(i,e){
+  			sel[i] = new InitSelect("sel",i);
+  		});
+  	}); //MVC패턴(Model view controller)
+
+  	/*each(); 메서드*/
+
+  </script>
+  <title>SiteName|PageName</title>
+ </head>
+ <body>
+ 	<select name="" id="">
+ 		<option value="">옵션텍스트1</option>
+ 		<option value="">옵션텍스트2</option>
+ 		<option value="">옵션텍스트3</option>
+ 		<option value="">옵션텍스트4</option>
+ 	</select></br></br></br>
+	<div class="selectBox" data-select = "sel"> <!--data-select는 개발하기위해 만든 의미없는 속성-->
+		<span><button>네이버</button></span>
+
+		<ul>
+			<li><a href="www.naver.com">네이버</a></li>
+			<li><a href="www.nate.com">네이트</a></li>
+			<li><a href="www.daum.net">다음</a></li>
+			<li><a href="www.google.com">구글</a></li>
+		</ul>
+		<input type="hidden" name="">
+	</div></br></br></br>
+	<div class="selectBox" data-select = "sel">
+		<span><button>네이버1</button></span>
+		<ul>
+			<li><a href="www.naver.com">네이버</a></li>
+			<li><a href="www.nate.com">네이트</a></li>
+			<li><a href="www.daum.net">다음</a></li>
+			<li><a href="www.google.com">구글</a></li>
+		</ul>
+		<input type="hidden" name="">
+	</div></br></br></br>
+	<div class="selectBox" data-select = "sel">
+		<span><button>네이버2</button></span>
+		<ul>
+			<li><a href="www.naver.com">네이버</a></li>
+			<li><a href="www.nate.com">네이트</a></li>
+			<li><a href="www.daum.net">다음</a></li>
+			<li><a href="www.google.com">구글</a></li>
+		</ul>
+		<input type="hidden" name="">
+	</div>
+	<div class="selectBox" data-select = "sel">
+		<span><button>네이버2</button></span>
+		<ul>
+			<li><a href="www.naver.com">네이버</a></li>
+			<li><a href="www.nate.com">네이트</a></li>
+			<li><a href="www.daum.net">다음</a></li>
+			<li><a href="www.google.com">구글</a></li>
+		</ul>
+    <input type="button" value="이동">
+		<input type="hidden" name="">
+	</div>
+ </body>
+</html>

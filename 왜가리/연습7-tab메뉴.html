@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css">
+  	*{margin: 0;padding: 0;}
+  	li{list-style: none;color:#222;/* font-size: 1rem; */} /* 9버전에서는 지원이 안된다. 하이브리드웹만들때 사용 rem/em은 부모요소에 상속을 받고 rem은 상속을 받지 않는다 */
+  	a{text-decoration: none;color:#222;}
+  	body{font: 0.875em Arial,sans-serif;} /* 0.875em=14px 14/16=0.875 16은 웹 기본 폰트사이즈*/
+  	.tabmenu_wrap{background: url(images/bbs_h3_bg.gif) 0 22px no-repeat;width: 370px;position: relative;}
+		.tabmenu_wrap .tabBtn_2{
+			position: absolute;
+			left: 78px;
+			top:0;
+		}
+		.tabmenu_wrap p{
+			position: absolute;
+			top:2px;
+			right:5px;
+		}
+		.tabmenu_wrap div{display: none;}
+		.tabmenu_wrap .tabBtn_1+div{display: block;}
+		.tabmenu_wrap li{height: 25px;line-height: 25px;position: relative;}
+		.tabmenu_wrap time{position: absolute;top:0;right: 0;}
+  	@media (max-width: 800px){
+  		html{
+  			/* font-size: 13px; */
+  		}
+  	}
+  	@media (max-width: 480px){
+  		/* html{font-size: 10px;} */
+  	}
+  </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript">
+  	(function(){
+			/*1.객체 생성함수를 정의
+			2.객체 생성
+			3.속성, 메서드 등록*/
+			function TabmenuFnc(objName,idx){
+				this.myObjName = objName;
+				this.myIdx = idx;
+				this.myObj = this.myObjName + ":eq("+this.myIdx+")"
+				this.actImg = $(this.myObj).find("h3:first img, h4:first img");
+				this.bindEvent();
+			}
+			TabmenuFnc.prototype.bindEvent = function(){
+				$(document).on("click",this.myObj + " h3 a, " + this.myObj + " h4 a",$.proxy(this.tabEvntHand,this));
+			};
+			TabmenuFnc.prototype.tabEvntHand = function(e){
+				e.preventDefault();
+				var $myImg = $(e.target);
+				var $myThis = $(e.target).closest('a');
+				var $myDiv = $myThis.parent().next();
+				var $visibleDiv = $(this.myObj+" div:visible")				
+				//alert(1234);
+				//보이는 div요소는 숨겨라
+				//클릭한 탭에 해당하는 div는 보여라
+				if($myDiv.is(":hidden")){
+					$visibleDiv.hide();
+					$myDiv.show();
+					var src_1 = this.actImg.attr("src").replace('_ov.gif',".gif");
+					this.actImg.attr("src",src_1);
+					var src_2 = $myImg.attr("src").replace(".gif","_ov.gif");
+					$myImg.attr("src",src_2);
+					this.actImg = $myImg;
+				}
+			};
+			$(function(){
+				//console.log($("div[data-type=tabmenu]"));
+				var arrTab = [];
+				var tabText = "div[data-type=tabmenu]";
+				var tabMenuWrap = $(tabText);
+				$.each(tabMenuWrap,function(i,o){
+					arrTab[i] = new TabmenuFnc(tabText, i);;
+				});
+				console.log(arrTab);
+			});
+		}());
+
+  </script>
+  <title>SiteName|PageName</title>
+ </head>
+ <body>
+	<div class="tabmenu_wrap" data-type="tabmenu">
+		<h4 class="tabBtn_1"><a href="#"><img src="images/tab_notice_ov.gif" alt=""></a></h4>
+		<div>
+			<ul>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+			</ul>
+			<p><a href="#"><img src="images/icon_more.gif" alt=""></a></p>
+		</div>
+		<h4 class="tabBtn_2"><a href="#"><img src="images/tab_pds.gif" alt=""></a></h4>
+		<div>
+			<ul>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+			</ul>
+			<p><a href="#"><img src="images/icon_more.gif" alt=""></a></p>
+		</div>
+	</div>
+	<div class="tabmenu_wrap" data-type="tabmenu">
+		<h3 class="tabBtn_1"><a href="#"><img src="images/tab_notice_ov.gif" alt=""></a></h3>
+		<div>
+			<ul>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+			</ul>
+			<p><a href="#"><img src="images/icon_more.gif" alt=""></a></p>
+		</div>
+		<h3 class="tabBtn_2"><a href="#"><img src="images/tab_pds.gif" alt=""></a></h3>
+		<div>
+			<ul>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+			</ul>
+			<p><a href="#"><img src="images/icon_more.gif" alt=""></a></p>
+		</div>
+	</div>
+	<div class="tabmenu_wrap" data-type="tabmenu">
+		<h3 class="tabBtn_1"><a href="#"><img src="images/tab_notice_ov.gif" alt=""></a></h3>
+		<div>
+			<ul>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">공지사항 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+			</ul>
+			<p><a href="#"><img src="images/icon_more.gif" alt=""></a></p>
+		</div>
+		<h3 class="tabBtn_2"><a href="#"><img src="images/tab_pds.gif" alt=""></a></h3>
+		<div>
+			<ul>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+				<li>
+					<a href="">자료실 관련된 내용입니다</a>
+					<time datatime="2016-12-30">2016.12.30</time>
+				</li>
+			</ul>
+			<p><a href="#"><img src="images/icon_more.gif" alt=""></a></p>
+		</div>
+	</div>
+ </body>
+</html>

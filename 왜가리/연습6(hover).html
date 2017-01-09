@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+  <style type="text/css">
+  	.box1{background-color: yellow;}
+  </style>
+  <script type="text/javascript">
+  	$(function(){
+  		$(".btn1").hover(
+  			function(){
+	  		$(this).text("닫힘")
+	  		},
+	  		function(){
+	  		$(this).text("열림")
+	  		}); //첫번째 함수는 마우스 올렸을때, 두번째는 마우스 벗어날때 실행된다.
+  		var btn2 = $(".btn2");
+  		var btn3 = $(".btn3");
+  		var box1 = $(".box1");
+  		var btn4 = $(".btn4");
+
+  		btn2.on("click",function(){
+  		//console.log(box1.css("display"));
+  		//box1.hide();
+  			var s = box1.css("display");
+	  		if (s == "block") {
+	  			//box1.hide();
+	  			/*box1.slideUp(1000,function(){
+	  				btn2.text("열림");
+	  			});*/ //메소드실행문을 일어나게하고 두에 일어나게 하는 것 콜백함수
+	  			box1.fadeOut(1000, function() {
+	  				btn2.text("열림");
+	  			});  			
+	  		}else{
+	  			//box1.show();
+	  			/*box1.slideDown("normal",function(){
+	  				btn2.text("닫힘");	
+	  			});*/
+	  			box1.fadeIn(1000, function() {
+	  				btn2.text("닫힘");
+	  			});  			  			
+	  		}
+  		});
+  		btn3.on("click",function(){
+  			var a = $(this); // =btn3
+  			$(".box2").stop().slideToggle(500,function(){
+  				//$(this); // =box2
+  				/*if(a.text()=="닫힘"){
+  					a.text("펼침");
+  				}else{
+  					a.text("닫힘");
+  				}*/
+  				if($(this).css("display") == none){
+  					a.text("펼침");
+  				}else{
+  					a.text("닫힘");
+  				}
+  			});
+  		});
+  		btn4.on("click",function(){
+  			$(".box3").fadeTo(1000, 0.5)/*,function(){
+  				if (btn4.text()=="닫힘") {
+  					btn4.text("열림");
+  				}else{
+  					btn4.text("닫힘");
+  				}
+  			});*/
+  		});
+  	});
+  </script>
+  <title>SiteName|PageName</title>
+ </head>
+ <body>
+	<p><button class="btn1">열림</button></p>
+	<div>
+		<button class="btn2">닫힘</button>
+		<div class="box1">
+			dlj;kfkljkhldfkljdfklkjldslkajflsdjskdjfslkdjfalksdjfslk
+			asdklfjskldfjlsakdjflsjflkasjflkjfksa
+			jasdfkjaslghadhgaeukhgad
+			adfsjaldfjkldsajflas
+			dslfakjsklfjdlkjlgkerjglwjekff<br />
+			a
+			sdflkajskfjgjdgsseslllllllllllllllllllllll<br />
+			dlj;kfkljkhldfkljdfklkjldslkajflsdjskdjfslkdjfalksdjfslk
+			asdklfjskldfjlsakdjflsjflkasjflkjfksa
+			jasdfkjaslghadhgaeukhgad
+			adfsjaldfjkldsajflas
+			dslfakjsklfjdlkjlgkerjglwjekff<br />
+			a
+			sdflkajskfjgjdgsseslllllllllllllllllllllll
+			dlj;kfkljkhldfkljdfklkjldslkajflsdjskdjfslkdjfalksdjfslk
+			asdklfjskldfjlsakdjflsjflkasjflkjfksa
+			jasdfkjaslghadhgaeukhgad
+			adfsjaldfjkldsajflas
+			dslfakjsklfjdlkjlgkerjglwjekff<br />
+			a
+			sdflkajskfjgjdgsseslllllllllllllllllllllll<br />
+		</div>
+		<button class="btn3">닫힘</button>
+		<div class="box2">
+			dlj;kfkljkhldfkljdfklkjldslkajflsdjskdjfslkdjfalksdjfslk
+			asdklfjskldfjlsakdjflsjflkasjflkjfksa
+			jasdfkjaslghadhgaeukhgad
+			adfsjaldfjkldsajflas
+			dslfakjsklfjdlkjlgkerjglwjekff<br />
+			a
+			sdflkajskfjgjdgsseslllllllllllllllllllllll<br />
+			dlj;kfkljkhldfkljdfklkjldslkajflsdjskdjfslkdjfalksdjfslk
+			asdklfjskldfjlsakdjflsjflkasjflkjfksa
+			jasdfkjaslghadhgaeukhgad
+			adfsjaldfjkldsajflas
+			dslfakjsklfjdlkjlgkerjglwjekff<br />
+			a			
+		</div>
+		<button class="btn4">닫힘</button>
+		<div class="box3">
+			dlj;kfkljkhldfkljdfklkjldslkajflsdjskdjfslkdjfalksdjfslk
+			asdklfjskldfjlsakdjflsjflkasjflkjfksa
+			jasdfkjaslghadhgaeukhgad
+			adfsjaldfjkldsajflas
+			dslfakjsklfjdlkjlgkerjglwjekff<br />
+			a
+			sdflkajskfjgjdgsseslllllllllllllllllllllll<br />
+			dlj;kfkljkhldfkljdfklkjldslkajflsdjskdjfslkdjfalksdjfslk
+			asdklfjskldfjlsakdjflsjflkasjflkjfksa
+			jasdfkjaslghadhgaeukhgad
+			adfsjaldfjkldsajflas
+			dslfakjsklfjdlkjlgkerjglwjekff<br />
+			a			
+		</div>
+	</div>
+ </body>
+</html>

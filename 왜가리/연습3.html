@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style type="text/css"></style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+  <script type="text/javascript">
+  	$(function(){
+  		/*1번 var k = function(){
+  			alert(1234);
+  		}
+  		$(".btn1").click(k);*/
+
+  		/*2번 $(".btn1").click(function(){
+  			alert(1234);
+  		});*/
+  		//이벤트(핸들러)
+  		/*var k = function(){
+  			console.log(1234);
+  		}*/
+  		/*
+  		//$(".btn1").on("mouseover focus",k);
+  		$(document).on("mouseover focus",".btn1",k);
+  		//$(".btn1").mouseover(k);
+  		//$(".btn1").focus(k);*/
+  		//var o = $("p:last").clone(); //같은애가 똑같이 만들어짐
+  		//$(".box1").append(o);
+  		/*$(".btn2").on("dblclick", function(){
+  				console.log(1234);
+  			});*/
+  		/*$(document).on({
+  			"dblclick":function(){
+  				console.log(1234);
+  				},
+  				"mouseover focus":function(){
+  					alert(1234);
+  				}
+  		},".btn2");*/
+  		var chkBox = function(){
+  			//alert(1234);
+  			//console.log($(this).prop("checked")); //prop:입력요소의 속성을 가져올때 ->콘솔창에 true/false로 나온다.
+  			var m = $(".box2 table").find(":checkbox");
+  			if($(this).prop("checked")){
+  				m.prop("checked",true);
+  			}else{
+  				m.prop("checked",false);
+  			}
+  		}
+  		$("#sel_all").on("click",chkBox);
+  	});
+  </script>
+  <title>SiteName|PageName</title>
+ </head>
+ <body>
+	<div class="box1">
+		<p><button class="btn1">버튼1</button></p>
+		<p><button class="btn2">버튼2</button></p>
+	</div>
+	<div class="box2">
+		<p><input type="checkbox" name="sel_all" id="sel_all">전체선택</p>
+		<table border="1">
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용1</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용2</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용3</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용4</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용5</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용6</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용7</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용8</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용9</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="" id=""></td>
+				<td>내용10</td>
+			</tr>
+		</table>
+	</div>
+ </body>
+</html>

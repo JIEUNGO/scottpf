@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css"></style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript">
+    $(function(){
+        /*
+        2가지 방법으로 사용가능함
+              $.each($(".myList li"),function(i, o){
+                console.log(i); //인덱스값
+                console.log(o); //객체
+                $(o).text("테스트"+(i+1));
+              });
+        */
+        $(".myList li").each(function(i, o){
+            console.log(i); //인덱스값
+            console.log(o); //객체
+            $(o).text("테스트"+(i+1));
+    });
+  </script>
+  
+  <title>SiteName|PageName</title>
+ </head>
+ <body>
+    <ul class="myList">
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+      <li>리스트</li>
+    </ul>
+ </body>
+</html> 

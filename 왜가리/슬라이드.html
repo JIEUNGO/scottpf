@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <style type="text/css">
+  	*{margin: 0;padding: 0;}
+  	.box1,.box2,.box3,.box4{width: 200px;height: 200px;border: 1px solid #000;}
+  </style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript">
+  	$(function(){
+	  	/*$(document).on("click",".btn",function(){
+	  		$(this).parent().css({"background-color","yellow"});
+	  	});*/
+	  	$.fn.bgChg = function(opt){
+	  		console.log(opt);
+	  		$.each($(this),function(i,o){ //함수를 적용한 btn_1을 가리킨다.
+	  			$(o).on("click",function(){
+	  				$(this).parent().css({"background-color":opt.color});
+	  			});
+	  		}); 
+	  	}
+	  	$(".btn").bgChg({color:"blue"});
+	  	$(".btn4").bgChg({color:"orange"});
+  	});
+  </script>
+  <title>SiteName|PageName</title>
+ </head>
+ <body>
+	<div class="box1"><button class="btn">버튼1</button></div>
+	<div class="box2"><button class="btn">버튼2</button></div>
+	<div class="box3"><button class="btn">버튼3</button></div>
+	<div class="box3"><button class="btn4">버튼4</button></div>
+ </body>
+</html>
