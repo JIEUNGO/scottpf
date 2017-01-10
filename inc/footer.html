@@ -17,10 +17,11 @@
 			<h3><a href="index.html"><img src="images/common/footer_logo.png" alt="스캇로고"></a></h3>
 			<div class="store_ft">
 				<h4>대리점 찾기</h4>
-				<form action="#">
+				<form action="#" class="store_ch_1">
 					<fieldset>
 						<legend>대리점 주소검색</legend>
-						<input type="text" name="store_ft_1" id="store_ft_1" title="대리점찾기" /><input type="submit" value="search" class="search_footer_1" title="대리점 찾기 검색" />
+						<span><input type="text" name="store_ft_1" id="store_ft_1" title="대리점찾기" /></span>
+						<input type="submit" value="search" class="search_footer_1" title="대리점 찾기 검색" />
 					</fieldset>
 				</form>
 				<form action="#">
@@ -35,24 +36,26 @@
 							<option value="구로구">구로구</option>
 						</select>
 						<input type="submit" value="Search" title="대리점 지역 검색" /> -->
-						<div class="selectBox" data-select="sel">
-							<button>시/도</button>
-							<ul>
-								<li><a href="#">시/도</a></li>
-								<li><a href="#">서울시</a></li>
-								<li><a href="#">경기도</a></li>
-								<li><a href="#">강원도</a></li>
-							</ul>
-							<input type="hidden" name="시/도">
+						<div class="select_wrap">
+							<div class="selectBox" data-select="sel">
+								<button>시/도</button>
+								<ul>
+									<li><a href="#">시/도</a></li>
+									<li><a href="#">서울시</a></li>
+									<li><a href="#">경기도</a></li>
+									<li><a href="#">강원도</a></li>
+								</ul>
+								<input type="hidden" name="시/도">
+							</div>
+							<div class="selectBox" data-select="sel">
+								<button>구/군</button>
+								<ul>
+									<li><a href="#">구/군</a></li>
+								</ul>
+								<input type="hidden" name="시/도">
+							</div>						
+							<input type="submit" value="Search" class="search_footer_2" title="대리점 지역 검색" />
 						</div>
-						<div class="selectBox" data-select="sel">
-							<button>구/군</button>
-							<ul>
-								<li><a href="#">구/군</a></li>
-							</ul>
-							<input type="hidden" name="시/도">
-						</div>
-						<input type="submit" value="Search" class="search_footer_2" title="대리점 지역 검색" />
 					</fieldset>
 				</form>
 			</div>

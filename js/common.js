@@ -79,6 +79,7 @@
   }
 
   /*gnb_mobile*/
+  /*
    $.fn.gnbMobile = function(opt){
     var myThis = $(this);
     var myThisClass = ".tablet ."+myThis.attr("class");
@@ -102,7 +103,7 @@
     $(document).on({
       "click":click
     }, myThisClass1+">.btn_gnb");
-  }
+  }*/
 /*  function gnbMobile(){
     this.myThis = ".gnb"
     this.myThisClass = ".tablet ."+myThis.attr("class");
@@ -133,7 +134,7 @@
    if (w >= 1024) {
       b.attr("class","");
       b.addClass("pc");
-   }else if (w >= 640 && w < 1024) {
+   }else if (w >= 767 && w < 1024) {
       b.attr("class","");
       b.addClass("tablet");
    } else {
@@ -149,6 +150,6 @@
     });
   $(".gnb").gnb();
   $(window).resize();
-  $(".gnb").gnbMobile();  
+ /* $(document).on("click",".gnb .btn_gnb",gnbMobile);*/
  });
 }());
