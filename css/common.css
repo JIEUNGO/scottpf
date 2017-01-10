@@ -227,6 +227,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .footer .ft_category>li>ul>li{margin-top: 6px;}
 .addr_wrap{position: absolute;bottom: 40px;left:30px;font-size: 12px;width: 63%;}
 .footer address{clear: both;color:#fff;}
+.footer address a[href^=tel] { color: inherit; text-decoration: none;}
 .footer .copy{color:#fff;}
 
 
