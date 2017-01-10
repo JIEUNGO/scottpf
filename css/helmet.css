@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+@media (max-width:1024px) {
+	.lnb>ul>li{width: 25%;}
+	.lnb>ul>li>ul{height: 215px;}
+}

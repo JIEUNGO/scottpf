@@ -14,7 +14,7 @@
 #slideBanner .bx-pager{position: absolute;bottom: 20px;left: 0;text-align: center;width: 100%;z-index: 10;}
 #slideBanner .bx-pager-item{display: inline;margin: 0 5px;}
 #slideBanner .bx-pager-link{display: inline-block;text-indent: -9999px;width: 16px;height: 16px;background: url(../images/main/btn_control.png) 0 0 no-repeat;}
-#slideBanner .bx-pager-link.active{background-position: 0 -61px;}
+#slideBanner .bx-pager-link.active{background-position: 0 -62px;}
 .pro_wrap{width: 100%;}
 .pro_wrap h3{background: url(../images/main/bg_line.png) 0 55% repeat-x;width: 98%;margin: 0 auto;}
 .pro_wrap h3 span{display: block;width: 315px;padding: 48px 0 30px 37px;line-height: 35px;margin: 0 auto;background: #fff url(../images/main/bg_ourpd_1.png) 30px 48px no-repeat;font-size: 30px;font-family: arial;font-weight: bold;text-align: center;}
