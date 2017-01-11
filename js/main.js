@@ -4,6 +4,6 @@ $(function(){
  			controls:true,
  			pager:true,
  			speed:2000,
- 			pause:6000
+ 			pause:4000
 	});
 });
