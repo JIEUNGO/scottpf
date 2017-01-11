@@ -47,86 +47,49 @@
     }
   }
 
-/*gnb-pc*/
-  $.fn.gnb = function(opt){
-    var myThis = $(this);
-    var myThisClass = ".pc ."+myThis.attr("class");
+/*gnb*/
+  $.fn.rsGnb = function(opt){
+    var mode = opt.mode;
+    var ts = $(this);
+    var selector = " ." + ts.attr("class") + ">ul>li>a";
+    /*$(document).on("focus mouseover", selector, function(e) {
+        e.preventDefault();
+        var myThis = $(this);
+        //$(this).closest("ul").find(">li>div:visible, >li>ul:visible").stop().slideUp(300)
+        myThis.next().slideDown(300);
+    });*/
 
-    var activeMenu = null;
-    var mouseOver = function(){
-      if(activeMenu){
-         activeMenu.next().stop().slideUp(300);
-         activeMenu.removeClass("on");
-      }
-      var ts = $(this);
-      ts.next().stop().slideDown(300);
-      ts.addClass("on");
-      activeMenu = ts;
+    if(mode == "all"){
+
+      var selector = " ." + ts.attr("class") + ">ul>li>a";
+      $(document).on("mouseover focus", selector, function(){
+        var myThis = $(this);
+        $(this).closest("ul").find(">li>div:visible, >li>ul:visible").stop().slideUp(300)
+        .end().find("a.on").removeClass("on");
+        myThis.next().slideDown(300);
+        $(this).addClass("on");
+      });
+      var selector3 = ".tablet" + " ." + ts.attr("class") + ">ul>li>div>ul>li>h3>a"+",.mobile" + " ." + ts.attr("class") + ">ul>li>div>ul>li>h3>a";
+      console.log(selector3);
+      $(document).on("click", selector3, function(){
+        $(this).parent().next().slideDown(300);
+      });
+
+      var selector2 = " ." + ts.attr("class");
+      $(document).on("mouseleave", selector2,function(){
+        $(">ul",this).find(">li>div:visible, >li>ul:visible").stop().slideUp(300)
+        .end().find("a.on").removeClass("on");
+      });
+     
     };
-    $(myThisClass+"ul>div").stop().slideUp(300);
-    $(document).on({
-      "mouseover focus":mouseOver
-    }, myThisClass+">ul>li>a");
 
-    myThis.on({
-      "mouseleave":function(){
-        if(activeMenu){
-        activeMenu.next().slideUp(300);
-        activeMenu.removeClass("on");
-        }
-      }
+
+    $(document).on("click",".btn_gnb",function(){
+      $(".gnb").slideToggle(1000);
     });
+
   }
-
-  /*gnb_mobile*/
  
-/*   $.fn.gnbMobile = function(opt){
-    var myThis = $(this);
-    var myThisClass = ".tablet ."+myThis.attr("class");
-    var myThisClass1 = ".mobile ."+myThis.attr("class");
-    var activeMenu = null;
-    //console.log(myThisClass);
-    var click = function(){
-      if(activeMenu){
-         activeMenu.next().slideUp(300);
-      }
-      var ts = $(this);
-      ts.next().slideDown(300);
-      activeMenu = ts;   
-    };
-    $(myThisClass+" ul").slideUp(300);
-    $(myThisClass1+" ul").slideUp(300);
-    
-    $(document).on({
-      "click":click
-    }, myThisClass+">.btn_gnb");
-    $(document).on({
-      "click":click
-    }, myThisClass1+">.btn_gnb");
-  }*/
-
-/*  function gnbMobile(){
-    this.myThis = ".gnb"
-    this.myThisClass = ".tablet ."+myThis.attr("class");
-    this.myThisClass1 = ".mobile ."+myThis.attr("class");
-    
-    this.myWrap = ".btn_gnb";
-    this.bindEvnt();
-  };
-  InitSelect.prototype.bindEvnt = function(){
-    $(document).on("click",this.myWrap + " button",$.proxy(this.selectHanddler_1, this));
-  };
-  InitSelect.prototype.selectHanddler_1 = function(e){
-    var $myThis = $(e.target);
-    var $mySelWrap = $(this.myWrap);
-    var $myUl = $("ul",$mySelWrap);
-    if($myUl.is(":hidden")){
-      $("ul:visible",this.myThis).hide();
-        $myUl.show();
-    }else{
-        $myUl.hide();
-    }
-  };*/
 
 
   /*resize*/
@@ -150,8 +113,9 @@
     $.each($("div[data-select=sel]"),function(i,e){
       sel[i] = new InitSelect("sel",i);
     });
-  $(".gnb").gnb();
+ // $(".gnb").gnb();
   $(window).resize();
+  $(".gnb").rsGnb({mode:"all"});
 /*  $(".gnb").gnbMobile();*/
  });
 }());
