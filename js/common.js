@@ -61,7 +61,7 @@
 
     if(mode == "all"){
 
-      var selector = " ." + ts.attr("class") + ">ul>li>a";
+      var selector = ".pc" + " ." + ts.attr("class") + ">ul>li>a";
       $(document).on("mouseover focus", selector, function(){
         var myThis = $(this);
         $(this).closest("ul").find(">li>div:visible, >li>ul:visible").stop().slideUp(300)
@@ -69,14 +69,45 @@
         myThis.next().slideDown(300);
         $(this).addClass("on");
       });
+
+      var selector2 = ".tablet" + " ." + ts.attr("class") + ">ul>li>a"+",.mobile" + " ." + ts.attr("class") + ">ul>li>a";
+      $(document).on("click", selector2, function(){
+        var myThis = $(this);
+        if(myThis.next().is(":hidden")) {
+          myThis.attr("style","");
+          $(".gnb li .on").removeClass('on').blur().removeClass('hover');
+          $(".gnb ul div:visible, .ul_common:visible").slideUp(300);
+          myThis.addClass("on");
+          myThis.next().slideDown(300);
+        } else {
+          myThis.css({"background-image":"url(images/common/bullet_lnb_ov.png)", color:"#fff"});
+          myThis.removeClass('on').blur().removeClass('hover');   
+          $(".gnb ul div:visible, .ul_common:visible").slideUp(300);
+        }
+        // var myDiv = $(this).closest("ul").find(">li>.info_prd_wrap, .ul_common");
+        // if(myDiv.is(":hidden")){          
+        // }else{
+        //   myDiv.stop().slideUp(300);
+        //   myThis.removeClass("on");
+        // }
+      });
+
       var selector3 = ".tablet" + " ." + ts.attr("class") + ">ul>li>div>ul>li>h3>a"+",.mobile" + " ." + ts.attr("class") + ">ul>li>div>ul>li>h3>a";
       console.log(selector3);
       $(document).on("click", selector3, function(){
-        $(this).parent().next().slideDown(300);
+        var h3Li= $(this).closest("li").find("ul");
+
+        if(h3Li.is(":hidden")){          
+          $(".info_prd_wrap ul:visible").slideUp(300);
+          h3Li.slideDown(300);
+        }else{
+          h3Li.slideUp(300);
+        }
+        
       });
 
-      var selector2 = " ." + ts.attr("class");
-      $(document).on("mouseleave", selector2,function(){
+      var selector4 = ".pc" + " ." + ts.attr("class");
+      $(document).on("mouseleave", selector4,function(){
         $(">ul",this).find(">li>div:visible, >li>ul:visible").stop().slideUp(300)
         .end().find("a.on").removeClass("on");
       });
@@ -85,7 +116,7 @@
 
 
     $(document).on("click",".btn_gnb",function(){
-      $(".gnb").slideToggle(1000);
+      $(".gnb").slideToggle(500);
     });
 
   }
@@ -113,9 +144,7 @@
     $.each($("div[data-select=sel]"),function(i,e){
       sel[i] = new InitSelect("sel",i);
     });
- // $(".gnb").gnb();
   $(window).resize();
   $(".gnb").rsGnb({mode:"all"});
-/*  $(".gnb").gnbMobile();*/
  });
 }());
