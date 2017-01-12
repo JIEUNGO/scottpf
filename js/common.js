@@ -84,12 +84,6 @@
           myThis.removeClass('on').blur().removeClass('hover');   
           $(".gnb ul div:visible, .ul_common:visible").slideUp(300);
         }
-        // var myDiv = $(this).closest("ul").find(">li>.info_prd_wrap, .ul_common");
-        // if(myDiv.is(":hidden")){          
-        // }else{
-        //   myDiv.stop().slideUp(300);
-        //   myThis.removeClass("on");
-        // }
       });
 
       var selector3 = ".tablet" + " ." + ts.attr("class") + ">ul>li>div>ul>li>h3>a"+",.mobile" + " ." + ts.attr("class") + ">ul>li>div>ul>li>h3>a";
@@ -127,10 +121,10 @@
   $(window).on("resize",function(){
   var b = $("body");
    var w = $(window).width();
-   if (w >= 1024) {
+   if (w > 1007) {
       b.attr("class","");
       b.addClass("pc");
-   }else if (w >= 767 && w < 1024) {
+   }else if (w > 749 && w <= 1007) {
       b.attr("class","");
       b.addClass("tablet");
    } else {

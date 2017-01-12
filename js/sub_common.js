@@ -9,6 +9,7 @@ $.fn.quickMenu = function(opt){
 	  //console.log(myThis.scrollTop());
 	  console.log(scH);
 	  if(myThis.scrollTop() >= scH) {
+	  	ts.stop();
 	  	return false;
 	  }
 	  if(myThis.scrollTop() <= visual_height) {
