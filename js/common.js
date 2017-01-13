@@ -80,7 +80,7 @@
           myThis.addClass("on");
           myThis.next().slideDown(300);
         } else {
-          myThis.css({"background-image":"url(images/common/bullet_lnb_ov.png)", color:"#fff"});
+          $(myThis+":not(.not_css)").css({"background-image":"url(images/common/bullet_lnb_ov.png)", color:"#fff"});
           myThis.removeClass('on').blur().removeClass('hover');   
           $(".gnb ul div:visible, .ul_common:visible").slideUp(300);
         }
@@ -118,7 +118,22 @@
 
 
   /*resize*/
-  $(window).on("resize",function(){
+    $(window).on("resize",function(){
+  var b = $("body");
+   var w = $(window).width()+17;
+
+   if (w > 1024) {
+      b.attr("class","");
+      b.addClass("pc");
+   }else if (w > 767 && w <= 1024) {
+      b.attr("class","");
+      b.addClass("tablet");
+   } else {
+      b.attr("class","");
+      b.addClass("mobile");
+    }
+  });
+/*  $(window).on("resize",function(){
   var b = $("body");
    var w = $(window).width();
    if (w > 1007) {
@@ -131,7 +146,7 @@
       b.attr("class","");
       b.addClass("mobile");
     }
-  });
+  });*/
 
  $(function(){
   var sel = [];
