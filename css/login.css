@@ -29,7 +29,7 @@ input[name="who_log"]+label,input[name="who_log_1"]+label,input[name="id_save"]+
 
 	.content_sub h4{text-indent: 0;}	
 	.log_box_wrap{position: relative;}
-	.log_box div{background-color: initial;position: absolute;top:0;left: 10px;float: none;width: 14%;min-width: 95px;}
+	.log_box div{background-color: #fff;position: absolute;top:1px;left: 10px;float: none;width: 14%;min-width: 95px;}
 	.log_box div img{width: 100%;}
 	.log_box form{float: none;margin: 0 auto;padding: 50px 20px 30px;width: 100%;}
   .log_box legend+p+p+p{margin-bottom: 5px;}

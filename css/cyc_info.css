@@ -1,5 +1,5 @@
 @charset "utf-8";
-.fc_b{color: #232323 !important;line-height: 44px;font-family: arial;}
+.location>h3{color: #232323;line-height: 44px;font-family: arial;}
 .tac{text-align: center;}
 .bgc_tr{background-color: #e4e7d6;}
 .bgc_tr_wh{background-color: #fff !important;}
@@ -37,3 +37,15 @@
 .geometry_size .size td span+span+span+span+span{top:20px;left: 44.26233%}
 .geometry_size .size td span+span+span+span+span+span{top:54px;left: 59.81988%;width: 25.8562%;}
 .geometry_size .size td span+span+span+span+span+span+span{top:20px;left:77.67819%;width: 22.4%;}
+
+@media(max-width: 767px){
+	.location ul{text-align: left;margin-bottom: 15px;}
+	.location>h3{color: #232323;line-height: 24px;}
+	.spec_wrap>div,.geometry_size>div>div{overflow-x:scroll;}
+	.spec,.geometry,.size{min-width:674px;}
+	.spec_wrap table th,.spec_wrap table td,.geometry_size .geometry th,.geometry_size .geometry td{padding: 10px;color: #4e4d4d;}
+}
+@media(max-width: 400px){
+	.location ul{margin-bottom: 5px;}
+	.location>h3{color: #fff;}
+}

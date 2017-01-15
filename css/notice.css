@@ -15,7 +15,7 @@
 
 .notice_sch{position: absolute;top:70px;right: 0;}
 .notice_sch select{width: 134px;height: 30px;padding: 6px 10px;font-size: 13px;}
-.notice_sch p{display: inline-block;border: 1px solid #c8c8c8;height: 30px;vertical-align: middle;}
+.notice_sch span{display: inline-block;border: 1px solid #c8c8c8;height: 30px;vertical-align: middle;}
 .notice_sch input[type="text"]{padding: 4px;font-size: 13px;border: none;}
 .notice_sch input[type="submit"]{width: 40px;height: 29px;background: #c8c8c8 url(../images/notice/btn_notice_sch.png) 50% 50% no-repeat;text-indent: -9999px;}
 
