@@ -1,0 +1,35 @@
+@charset "utf-8";
+.content_sub>.faq_top{background: url(../images/faq/bg_fnq_content.png) 13% 47px no-repeat;padding: 43px 0;}
+.content_sub>.faq_top>p{margin-left: 33.40163%;}
+.content_sub>.faq_top>p:first-child{font-weight: bold;font-size: 20px;margin-bottom: 3px;}
+.content_sub>.faq_top>p+p{font-size: 12px;line-height: 17px;margin-bottom: 40px;}
+.content_sub>.faq_top>p+p>a{display: inline-block;width: 98px;height: 25px;border: 1px solid #aaaaaa;font-size: 12px;padding: 3px 20px 3px 9px;margin-left: 170px;background: url(../images/faq/bg_arrow_more_1.png) 75px 50% no-repeat;}
+.faq_wrap{border-top: 2px solid #383838;border-bottom: 2px solid #c1c1c1;margin-bottom: 76px;}
+.faq_wrap li{border-top: 1px solid #cccccc;}
+.faq_wrap li a{display: block;width: 100%;background: url(../images/faq/bullet_minu.png) 98% 25px no-repeat;cursor: pointer;padding-right: 40px;}
+.faq_wrap li .on{background-image: url(../images/faq/bullet_minu_ov.png);}
+.faq_wrap li .on span:first-child{background-image: url(../images/faq/bg_qu_ov.png);color:#779500;}
+.faq_wrap li .on span{color:#779500;}
+.faq_wrap li:first-child a{border-top: none;}
+.faq_wrap li a span:first-child{background: url(../images/faq/bg_qu.png) 16px 50% no-repeat;display: inline-block;padding: 20px 0 20px 74px;color:#000;max-width: 274px;width: 50%;}
+.faq_wrap li a span+span{color:#666666;}
+.faq_wrap li p{background: url(../images/faq/bg_an.png) 20px 0 no-repeat;padding: 5px 0 51px 74px;}
+.faq_wrap li p{display: none;}
+.faq_wrap li .on+p{display: block;}
+
+
+@media (max-width: 1024px){
+	.content_sub h4{font-size: 26px;text-indent: 0;}
+}
+
+@media (max-width: 767px){
+	.content_sub>.faq_top{background-image: none;padding: 20px 10px;}
+	.content_sub h4{font-size: 24px;}
+	.content_sub>.faq_top>p{margin: 0 auto;text-align: left;max-width:415px;}
+	.content_sub>.faq_top>p+p{max-width:400px;}
+	.faq_wrap li a:after{content: "";display: block;clear: both;}
+	.faq_wrap li .on span:first-child{background: none;}
+	.faq_wrap li a span:first-child{padding-left: 10px;width: 20%;text-align: center;font-weight: bold;background-image: none;vertical-align: middle;}
+	.faq_wrap li a span+span{width: 80%;float: right;padding: 20px;}
+	.faq_wrap li p{background-size:8%;background-image: none;padding: 5px 0 21px;width: 80%;margin: 0 auto;}
+}

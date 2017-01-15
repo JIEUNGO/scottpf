@@ -2,7 +2,9 @@
 #slideBanner{position: relative;width: 100%;margin:0 auto;}
 #slideBanner img{width: 100%;}
 #slideBanner .slideContentsWrap{position: relative;}
-#slideBanner .slideContentsWrap .pos_a1,.pos_a2,.pos_a3{font-weight: bold;font-family: arial;color: #fff;font-style: italic;}
+#slideBanner .slideContentsWrap .pos_a1,
+#slideBanner .slideContentsWrap .pos_a2,
+#slideBanner .slideContentsWrap .pos_a3{font-weight: bold;font-family: arial;color: #fff;font-style: italic;}
 #slideBanner .slideContentsWrap .pos_a1{position: absolute;top:75.9756%;right: 10%;text-align: right;}
 #slideBanner .slideContentsWrap .pos_a1>span:first-child{margin-bottom: 5px;display: block;}
 #slideBanner .slideContentsWrap span:first-child{font-size: 66px;line-height: 70px;}
@@ -110,8 +112,12 @@
 	.notice p a{top:25px;}
 }
 @media (max-width: 400px){
+	#slideBanner .slideContentsWrap .pos_a1,
+	#slideBanner .slideContentsWrap .pos_a2,
+	#slideBanner .slideContentsWrap .pos_a3{position: static;background-color: #313131;height: 90px;text-align: right;padding: 5px 20px;}
+	#slideBanner .slideContentsWrap .pos_a1{padding: 20px 20px;}
+
 	.pro_wrap h3 span{font-size: 22px;width: 240px;padding: 28px 0 18px 27px;background-position: 20px 28px;}
 	.news h3 span,.notice h3 span{font-size: 22px;width: 120px;}
 	.pro_wrap .our_pro li span{font-size: 20px;}
-
 }

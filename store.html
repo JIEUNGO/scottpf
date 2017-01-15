@@ -42,12 +42,14 @@
 									<label for="area_name">지역명</label>
 									<p>
 										<span>
-												<select name="area_name" id="area_name" title="서울ㄹ">
-													<option value="서울">서울</option>
-												</select>
-												<select name="area_name1" id="area_name1" title="구/군">
-													<option value="area_name1">구/군</option>
-												</select>
+											<select name="area_name" id="area_name" title="서울ㄹ">
+												<option value="서울">서울</option>
+											</select>
+										</span>
+										<span>
+											<select name="area_name1" id="area_name1" title="구/군">
+												<option value="area_name1">구/군</option>
+											</select>
 										</span>
 										<input type="submit" value="검색" title="지역검색">
 									</p>
@@ -75,165 +77,455 @@
 							</form>
 					</div>
 				</div>
-				<ul class="store_list clearFix">
-					<li>
-						<a href="#" class="on">전체</a>
-					</li>
-					<li>
-						<a href="#">공식판매점</a>
-					</li>
-					<li>
-						<a href="#">프리미엄스토어</a>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<a href="#"><img src="images/store/store_1.png" alt="경태네자전거"></a>
-						<table>
-							<caption>취급판매점정보</caption>
-							<colgroup>
-								<col style="width:20%;">
-								<col style="width:*;">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>대리점명</th>
-									<td>경태네 자전거</td>
-								</tr>
-								<tr>
-									<th>구분</th>
-									<td class="fwb_fcr">프리미엄</td>
-								</tr>
-								<tr>
-									<th>지역</th>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<th>연락처</th>
-									<td>070-4402-8989</td>
-								</tr>
-								<tr>
-									<th>주소</th>
-									<td>서울 서초구 강남대로25길 59 (양재동)</td>
-								</tr>
-							</tbody>
-						</table>
-						<p>
-							<a href="#">상세보기</a>
-							<a href="#">지도보기</a>
-						</p>
-					</li>
-					<li>
-						<a href="#"><img src="images/store/store_2.png" alt="스마일자전거"></a>
-						<table>
-							<caption>취급판매점정보</caption>
-							<colgroup>
-								<col style="width:17.4%;">
-								<col style="width:*;">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>대리점명</th>
-									<td>스마일 자전거</td>
-								</tr>
-								<tr>
-									<th>구분</th>
-									<td class="fwb_fcr">프리미엄</td>
-								</tr>
-								<tr>
-									<th>지역</th>
-									<td>경기</td>
-								</tr>
-								<tr>
-									<th>연락처</th>
-									<td>878-5028</td>
-								</tr>
-								<tr>
-									<th>주소</th>
-									<td>
-										경기 의정부시 평화로 196 (호원동, 신일엘리시움) 신일엘리시움상가 119호
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						<p>
-							<a href="#">상세보기</a>
-							<a href="#">지도보기</a>
-						</p>
-					</li>
-					<li>
-						<a href="#"><img src="images/store/store_3.png" alt="캡틴바이크"></a>
-						<table>
-							<caption>취급판매점정보</caption>
-							<colgroup>
-								<col style="width:18%;">
-								<col style="width:*;">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>대리점명</th>
-									<td>캡틴바이크</td>
-								</tr>
-								<tr>
-									<th>구분</th>
-									<td>공식</td>
-								</tr>
-								<tr>
-									<th>지역</th>
-									<td>서울</td>
-								</tr>
-								<tr>
-									<th>연락처</th>
-									<td>02-3141-7989</td>
-								</tr>
-								<tr>
-									<th>주소</th>
-									<td>서울 서대문구 성산로 253-4 (연희동, 금송빌딩) 금송빌딩 1층 102</td>
-								</tr>
-							</tbody>
-						</table>
-						<p>
-							<a href="#">상세보기</a>
-							<a href="#">지도보기</a>
-						</p>
-					</li>
-					<li>
-						<a href="#"><img src="images/store/store_no_image.png" alt="이미지없음 킹바이크"></a>
-						<table>
-							<caption>취급판매점정보</caption>
-							<colgroup>
-								<col style="width:17.4%;">
-								<col style="width:*;">
-							</colgroup>
-							<tbody>
-								<tr>
-									<th>대리점명</th>
-									<td>킹바이크</td>
-								</tr>
-								<tr>
-									<th>구분</th>
-									<td>공식</td>
-								</tr>
-								<tr>
-									<th>지역</th>
-									<td>경기</td>
-								</tr>
-								<tr>
-									<th>연락처</th>
-									<td>031-554-3255</td>
-								</tr>
-								<tr>
-									<th>주소</th>
-									<td>경기 구리시 아차산로 499 (교문동, 중앙하이츠티움)	중앙하이츠티움 B-101</td>
-								</tr>
-							</tbody>
-						</table>
-						<p>
-							<a href="#">상세보기</a>
-							<a href="#">지도보기</a>
-						</p>
-					</li>
-				</ul>
+				<div class="store_wrap">
+					<h3><a href="#" class="on">전체</a></h3>						
+						<ul>
+							<li>
+								<a href="#"><img src="images/store/store_1.png" alt="경태네자전거"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:20%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>경태네 자전거</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td class="fwb_fcr">프리미엄</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>서울</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>070-4402-8989</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>서울 서초구 강남대로25길 59 (양재동)</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/store/store_2.png" alt="스마일자전거"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:17.4%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>스마일 자전거</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td class="fwb_fcr">프리미엄</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>경기</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>878-5028</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>
+												경기 의정부시 평화로 196 (호원동, 신일엘리시움) 신일엘리시움상가 119호
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/store/store_3.png" alt="캡틴바이크"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:18%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>캡틴바이크</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td>공식</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>서울</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>02-3141-7989</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>서울 서대문구 성산로 253-4 (연희동, 금송빌딩) 금송빌딩 1층 102</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/store/store_no_image.png" alt="이미지없음 킹바이크"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:17.4%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>킹바이크</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td>공식</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>경기</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>031-554-3255</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>경기 구리시 아차산로 499 (교문동, 중앙하이츠티움)	중앙하이츠티움 B-101</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+						</ul>
+					<h3><a href="#">공식판매점</a></h3>
+						<ul>
+							<li>
+								<a href="#"><img src="images/store/store_1.png" alt="경태네자전거"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:20%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>경태네 자전거</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td>공식</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>서울</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>070-4402-8989</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>서울 서초구 강남대로25길 59 (양재동)</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/store/store_2.png" alt="스마일자전거"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:17.4%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>스마일 자전거</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td>공식</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>경기</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>878-5028</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>
+												경기 의정부시 평화로 196 (호원동, 신일엘리시움) 신일엘리시움상가 119호
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/store/store_3.png" alt="캡틴바이크"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:18%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>캡틴바이크</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td>공식</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>서울</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>02-3141-7989</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>서울 서대문구 성산로 253-4 (연희동, 금송빌딩) 금송빌딩 1층 102</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/store/store_no_image.png" alt="이미지없음 킹바이크"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:17.4%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>킹바이크</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td>공식</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>경기</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>031-554-3255</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>경기 구리시 아차산로 499 (교문동, 중앙하이츠티움)	중앙하이츠티움 B-101</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+						</ul>
+					<h3><a href="#">프리미엄스토어</a></h3>					
+						<ul>
+							<li>
+								<a href="#"><img src="images/store/store_1.png" alt="경태네자전거"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:20%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>경태네 자전거</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td class="fwb_fcr">프리미엄</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>서울</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>070-4402-8989</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>서울 서초구 강남대로25길 59 (양재동)</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/store/store_2.png" alt="스마일자전거"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:17.4%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>스마일 자전거</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td class="fwb_fcr">프리미엄</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>경기</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>878-5028</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>
+												경기 의정부시 평화로 196 (호원동, 신일엘리시움) 신일엘리시움상가 119호
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/store/store_3.png" alt="캡틴바이크"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:18%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>캡틴바이크</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td class="fwb_fcr">프리미엄</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>서울</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>02-3141-7989</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>서울 서대문구 성산로 253-4 (연희동, 금송빌딩) 금송빌딩 1층 102</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+							<li>
+								<a href="#"><img src="images/store/store_no_image.png" alt="이미지없음 킹바이크"></a>
+								<table>
+									<caption>취급판매점정보</caption>
+									<colgroup>
+										<col style="width:17.4%;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>대리점명</th>
+											<td>킹바이크</td>
+										</tr>
+										<tr>
+											<th>구분</th>
+											<td class="fwb_fcr">프리미엄</td>
+										</tr>
+										<tr>
+											<th>지역</th>
+											<td>경기</td>
+										</tr>
+										<tr>
+											<th>연락처</th>
+											<td>031-554-3255</td>
+										</tr>
+										<tr>
+											<th>주소</th>
+											<td>경기 구리시 아차산로 499 (교문동, 중앙하이츠티움)	중앙하이츠티움 B-101</td>
+										</tr>
+									</tbody>
+								</table>
+								<p>
+									<a href="#">상세보기</a>
+									<a href="#">지도보기</a>
+								</p>
+							</li>
+						</ul>
+				</div>
 				<div class="pagenation_wrap">
 					<ul class="pagenation">
 						<li><a href="#"><img src="images/common/btn_pg_first.png" alt="처음으로"></a></li>

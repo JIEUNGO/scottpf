@@ -20,11 +20,10 @@
 .notice_sch input[type="submit"]{width: 40px;height: 29px;background: #c8c8c8 url(../images/notice/btn_notice_sch.png) 50% 50% no-repeat;text-indent: -9999px;}
 
 @media (max-width:1024px) {
-	.content_sub h4{font-size: 26px;}
+	.content_sub h4{text-indent: 0;font-size: 26px;}
 	.notice_sch{top:60px;}
 }
 @media (max-width:767px) {
-	#container{margin-bottom: 150px;}
 	.content_sub h4{text-indent: 0;font-size: 24px;}
 	.notice_sch select{width: 16.688%;min-width: 80px;}
 	.notice_sch p{width: 65%;max-width: 200px;position: relative;}
@@ -34,5 +33,6 @@
 	.notice th+th+th{background-image: none;}
 	.notice th+th+th+th{background-image: url(../images/notice/bullet_notice_1.png);}
  	.notice th+th+th+th{width:20%;font-size: 12px;}
+ 	.pagenation_wrap{padding: 0 20px;}
 
 }

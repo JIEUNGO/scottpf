@@ -3,7 +3,7 @@
 (function(){
 	$.fn.lnb = function(){
 		var ts = $(this);
-		var lnbA = ".pc" + " ." + ts.attr("class") + ">ul>li>a"+",.tablet" + " ." + ts.attr("class") + ">ul>li>a";
+		var lnbA = " ." + ts.attr("class") + ">ul>li>a"
 		
 		$(document).on("click", lnbA, function(e){
 				e.preventDefault();

@@ -1,5 +1,6 @@
 @charset "utf-8";
-.content h4{padding: 40px 0 10px 20px;font-size: 28px;font-weight: bold;background: url(../images/common/line_cyc_common.png) 0 bottom repeat-x;margin-bottom: 12px;}
+.store_list{position: relative;}
+.content h4{padding: 40px 0 10px 10px;font-size: 26px;font-weight: bold;background: url(../images/common/line_cyc_common.png) 0 bottom repeat-x;margin-bottom: 12px;}
 .content .area_sch_wrap{background-color: #ebebeb;position: relative;height: 411px;}
 .content .area_sch_wrap img{position: absolute;top:12px;left: 69px;}
 .content .area_sch_wrap div{display: inline-block;vertical-align: middle;margin-top: 52px;width: 100%;min-width:503px;padding:0 5.5% 0 35.75%;}
@@ -8,37 +9,51 @@
 .content .area_sch_wrap div select{width: 41.2%;height: 30px;margin-right: 1%;}
 .content .area_sch_wrap div input[type="text"]{width: 84%;height: 30px;margin-right: 1%;}
 .content .area_sch_wrap div input[type="submit"]{width: 70px;height:30px;color:#fff;background-color: #333333;}
-.content .store_list{width: 100%;background: url(../images/store/bg_line_top.png) 0 bottom repeat-x;margin-top: 61px;}
-.content .store_list li a{float: left;width: 185px;height: 50px;background-color: #fff;border: 1px solid #cccccc;border-bottom: 2px solid #000;border-left: none;font-size: 16px;color:#949494;text-align: center;padding: 14px;}
-.content .store_list .on{border: 1px solid #000;background-color: #000;color:#fff;font-weight: bold;}
-.content .store_list li:first-child .on{border-left: 1px solid #000;}
-.content .store_list li:first-child a{border-left: 1px solid #cccccc;}
-.content .store_list+ul>li{padding: 54px 6.0833%;border-bottom: 1px solid #cccccc;}
-.content .store_list+ul>li:after{content:""; display:block;clear:both;}
-.content .store_list+ul>li img{float: left;width: 29.696%;}
-.content .store_list+ul>li table{float: left;margin-top: 21px;margin-left: 72px;width: 37%;}
-.content .store_list+ul>li p{float: right;}
-.content .store_list+ul>li table th,.content .store_list+ul>li table td{padding: 6px;vertical-align: top;}
-.content .store_list+ul>li table th{font-weight: bold;min-width: 77px;}
+.content .store_wrap{background: url(../images/store/bg_line_top.png) 0 50px repeat-x;margin-top: 61px;position: relative;}
+.content .store_wrap h3>a{display: block;width: 185px;height: 50px;background-color: #fff;border: 1px solid #cccccc;border-bottom: none;font-size: 16px;color:#949494;text-align: center;padding: 14px;}
+.content .store_wrap .on{border: 1px solid #000;background-color: #000;color:#fff;font-weight: bold;}
+.content .store_wrap>h3:first-child .on{border-left: 1px solid #000;}
+
+.content .store_wrap h3+ul+h3{position: absolute;top: 0;left: 184px;}
+.content .store_wrap h3+ul+h3+ul+h3{left: 368px;}
+.content .store_wrap h3+ul+h3+ul{display: none;}
+.content .store_wrap>ul>li{padding: 54px 6.0833%;border-bottom: 1px solid #cccccc;}
+.content .store_wrap>ul>li:after{content:""; display:block;clear:both;}
+.content .store_wrap>ul>li img{float: left;width: 29.696%;}
+.content .store_wrap>ul>li table{float: left;margin-top: 21px;margin-left: 72px;width: 37%;}
+.content .store_wrap>ul>li p{float: right;}
+.content .store_wrap>ul>li table th,.content .store_wrap>ul>li table td{padding: 6px;vertical-align: top;}
+.content .store_wrap>ul>li table th{font-weight: bold;min-width: 77px;}
 .fwb_fcr{font-weight: bold;color: #ff0000;}
-.content .store_list+ul>li p a{display: inline-block;width: 82px;height: 28px;color:#fff;font-size: 13px;padding: 5px 8px 5px 25px;background: #333333 url(../images/store/icon_detail.png) 5px 50% no-repeat;}
-.content .store_list+ul>li p a+a{background-image: url(../images/store/icon_map.png);}
-.pagenation_wrap{margin-top: 56px;margin-bottom: 200px;}
+.content .store_wrap>ul>li p a{display: inline-block;width: 82px;height: 28px;color:#fff;font-size: 13px;padding: 5px 8px 5px 25px;background: #333333 url(../images/store/icon_detail.png) 5px 50% no-repeat;}
+.content .store_wrap>ul>li p a+a{background-image: url(../images/store/icon_map.png);}
+.pagenation_wrap{margin-top: 56px;}
 
 @media (max-width:1024px) {
 	.content .area_sch_wrap{background-color: #ebebeb;position: relative;height: initial;}
 	.content .area_sch_wrap img{display: none;}
 	.content .area_sch_wrap div{margin-top: 52px;width: 100%;padding:0 10% 5%;min-width:initial;}
-	.content .area_sch_wrap div p{position: relative;}
-	/*.content .area_sch_wrap div select{width: 41%;}
-	.content .area_sch_wrap div select+select{left: 35%;position: absolute;top:0;}*/
-	.content .area_sch_wrap div p span{display: block;/*height: 30px;display: block;width: 100%;padding-right: 80px;position: relative;*/}
+	.content .area_sch_wrap div p{position: relative;width: 100%;padding-right: 80px;}
+	.content .area_sch_wrap div form:first-child p span{width: 49.1%;display: inline-block;}
+	.content .area_sch_wrap div form:first-child p span+span{position: relative;}
+	.content .area_sch_wrap div form:first-child p span+span select{position: absolute;top:-18px;left: 5px;width: 100%;}
+	.content .area_sch_wrap div form:first-child select{width: 100%;}
+	.content .area_sch_wrap div form+form p span{height: 30px;display: block;position: relative;}
 	.content .area_sch_wrap div input[type="text"]{width: 100%;}
 	.content .area_sch_wrap div input[type="submit"]{position: absolute;top:0;right: 0;}
- /* p태그에 right패딩,select에 span감싸고, 50%준다음에 ,select하나에 left패딩 주기! */
-
-
+	.content .store_wrap>ul>li{padding: 40px 3%;}
+	.content .store_wrap>ul>li table{margin-top: 0px;margin-left: 30px;}
 }
 @media (max-width:767px) {
-
+	.content h4{font-size: 24px;}
+	.content .area_sch_wrap div form:first-child p span{width: 100%;}
+	.content .area_sch_wrap div form:first-child p span+span select{position: static;margin-top: 5px;}
+	.content .area_sch_wrap div{margin-top: 44px;}
+	.content .store_wrap h3>a{width: 95px;font-size: 14px;padding: 15px 5px;}
+	.content .store_wrap h3+ul+h3+ul+h3>a{padding: 7px 14px;}
+	.content .store_wrap h3+ul+h3{position: absolute;top: 0;left: 94px;}
+	.content .store_wrap h3+ul+h3+ul+h3{left: 188px;}
+	.content .store_wrap>ul>li img{display: none;}
+	.content .store_wrap>ul>li{padding: 20px 3%;}
+	.content .store_wrap>ul>li table{margin-left: 0;width: 100%;}
 }
