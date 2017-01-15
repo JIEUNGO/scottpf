@@ -4,7 +4,7 @@
 .agree_wrap{width: 100%;height: 200px;border: 1px solid #cccccc;overflow-y: scroll;padding: 22px;font-size: 13px;color:#777777;margin-bottom: 12px;}
 .agree_wrap span{font-weight: bold;display: block;padding-bottom: 10px;}
 .agree_wrap p{padding-bottom: 30px;line-height: 24px;}
-.btn_agree span{margin-right: 27px;}
+.btn_agree span:first-child{margin-right: 27px;}
 .btn_agree label{margin-right: 17px;}
 .btn_agree input[type="radio"]{margin-right: 4px;}
 
@@ -13,6 +13,9 @@
 }
 @media (max-width: 767px){
 	.content_sub h4{font-size: 24px;}
+}
+@media (max-width: 457px){
+	.btn_agree span+span{display: block;width: 100%;padding-top: 5px;}
 }
 @media (max-width: 424px){
   .content_sub .agree_procedure li:first-child{background-position: right -4px;}

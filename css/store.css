@@ -56,4 +56,5 @@
 	.content .store_wrap>ul>li img{display: none;}
 	.content .store_wrap>ul>li{padding: 20px 3%;}
 	.content .store_wrap>ul>li table{margin-left: 0;width: 100%;}
+	.pagenation_wrap{padding: 0 20px;}
 }
