@@ -1,6 +1,7 @@
 <? include "inc/top.html"?>
   <title>SCOTT North Asia | 가입 인증</title>
   <script type="text/javascript" src="js/sub_common.js"></script>
+  <script type="text/javascript" src="js/member_2.js"></script>
   <link rel="stylesheet" type="text/css" href="css/member_2.css">
  </head>
  <body>
@@ -46,49 +47,44 @@
 				</div>
 				<div class="content_sub">
 					<h4>회원가입</h4>
-					<form action="#">
-						<fieldset>
-							<legend>약관 동의</legend>
-							<ul class="agree_procedure clearFix">
-								<li>약관 동의</li>
-								<li class="on">가입 인증</li>
-								<li>회원정보 입력</li>
-								<li>회원가입 완료</li>
-							</ul>
-							<div class="greetings">
-								<p><span>스캇노스아시아</span><br />회원 가입을 환영합니다.</p>
+						<ul class="agree_procedure clearFix">
+							<li>약관 동의</li>
+							<li class="on">가입 인증</li>
+							<li>회원정보 입력</li>
+							<li>회원가입 완료</li>
+						</ul>
+						<div class="greetings">
+							<p><span>스캇노스아시아</span><br />회원 가입을 환영합니다.</p>
+							<p>
+								스캇노스아시아 회원으로 가입하시면 회원님께서 이용하시는 서비스 정보 조회 및 특별한 혜택을 누리실 수 있으며,<br />
+								스캇노스아시아의 각종 행사 및 이벤트에 참여 가능합니다.
+							</p>
+						</div>
+						<div class="certifi">
+							<section class="clearFix">
+								<h5>휴대폰 인증</h5>
 								<p>
-									스캇노스아시아 회원으로 가입하시면 회원님께서 이용하시는 서비스 정보 조회 및 특별한 혜택을 누리실 수 있으며,<br />
-									스캇노스아시아의 각종 행사 및 이벤트에 참여 가능합니다.
+									본인 명의의 휴대폰으로 인증번호를 전송받아
+									가입 하실 수 있습니다.<br />
+									(동일 번호로 1개의 아이디 가입 가능)
 								</p>
-							</div>
-							<div class="certifi">
-								<section class="clearFix">
-									<h5>휴대폰 인증</h5>
-									<p>
-										본인 명의의 휴대폰으로 인증번호를 전송받아<br />
-										가입 하실 수 있습니다.<br />
-										(동일 번호로 1개의 아이디 가입 가능)
-									</p>
-									<a href="#">휴대폰 인증받기</a>
-								</section>
-								<section class="clearFix">
-									<h5>이메일 인증</h5>
-									<p>
-										입력하신 이메일주소로 인증링크를 전송받아<br />
-										가입 하실 수 있습니다.<br />
-										(동일 이메일 주소로 1개 아이디 가입 가능)
-									</p>
-									<a href="#">이메일 인증받기</a>
-								</section>
-							</div>
-							<ul>
-								<li>스캇노스아시아는 극소수 익명 사용자의 대량 가입으로 인한 피해를 방지하고 깨긋하고 안전한 인터넷 서비스 이용을 위해 가입인증을 시행하고 있습니다.</li>
-								<li>통신사의 사정으로 휴대폰 인증을 위한 메세지를 받지 못하는 경우도 있습니다.</li>
-								<li>인증번호 전송 비용은 스캇노스아시아에서 부담합니다.</li>
-							</ul>
-						</fieldset>
-					</form>					
+								<a href="#">휴대폰 인증받기</a>
+							</section>
+							<section class="clearFix">
+								<h5>이메일 인증</h5>
+								<p>
+									입력하신 이메일주소로 인증링크를 전송받아
+									가입 하실 수 있습니다.<br />
+									(동일 이메일 주소로 1개 아이디 가입 가능)
+								</p>
+								<a href="#">이메일 인증받기</a>
+							</section>
+						</div>
+						<ul>
+							<li>스캇노스아시아는 극소수 익명 사용자의 대량 가입으로 인한 피해를 방지하고 깨긋하고 안전한 인터넷 서비스 이용을 위해 가입인증을 시행하고 있습니다.</li>
+							<li>통신사의 사정으로 휴대폰 인증을 위한 메세지를 받지 못하는 경우도 있습니다.</li>
+							<li>인증번호 전송 비용은 스캇노스아시아에서 부담합니다.</li>
+						</ul>			
 				</div>
 				<? include "inc/quickmenu.html" ?>
 			</div>
@@ -118,7 +114,7 @@
 						- <input type="text" name="phone_2" id="phone_2" title="휴대폰번호 중간 3~4자리"> - <input type="text" name="phone_3" id="phone_3" title="휴대폰번호 끝 4자리">
 						<a href="#">인증번호받기</a>
 					</p>
-					<p>
+					<p class="put_num">
 						<span>휴대폰으로 받은 인증번호 입력 후 '확인'을 눌러 주세요.</span>
 						<input type="text" name="certifi_num" id="certifi_num" title="인증번호입력창">
 						<a href="#">인증번호 입력</a>
@@ -129,7 +125,7 @@
 				</p>
 				</fieldset>
 			</form>
-			<button>닫기버튼</button>
+			<button class="btn_close">닫기버튼</button>
 		</div>		
 		<div class="certifi_email">
 			<h5>인증메일 받기</h5>
@@ -153,7 +149,7 @@
 					</p>					
 				</fieldset>
 			</form>
-			<button>닫기버튼</button>
+			<button class="btn_close">닫기버튼</button>
 		</div>
 		<!-- //인증번호,인증메일받기 -->
 		<!-- 푸터영역 -->
