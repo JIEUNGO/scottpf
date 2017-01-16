@@ -15,16 +15,11 @@
 .faq_wrap li a span+span{color:#666666;}
 .faq_wrap li p{background: url(../images/faq/bg_an.png) 20px 0 no-repeat;padding: 5px 0 51px 74px;}
 .faq_wrap li p{display: none;}
-.faq_wrap li .on+p{display: block;}
-
-
-@media (max-width: 1024px){
-	.content_sub h4{font-size: 26px;text-indent: 0;}
-}
+.faq_wrap li p{line-height: 20px;}
+.gu_card a+p>img+span{display: block;margin-top: 10px;}
 
 @media (max-width: 767px){
 	.content_sub>.faq_top{background-image: none;padding: 20px 10px;}
-	.content_sub h4{font-size: 24px;}
 	.content_sub>.faq_top>p{margin: 0 auto;text-align: left;max-width:415px;}
 	.content_sub>.faq_top>p+p{max-width:400px;}
 	.faq_wrap li a:after{content: "";display: block;clear: both;}

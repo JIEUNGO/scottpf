@@ -33,16 +33,12 @@
 .certifi_phone input[type="reset"],.certifi_email input[type="reset"]{border: 1px solid #333333;width: 51px;height: 30px;background-color: #fff;margin-left: 9px;}
 .certifi_phone button,.certifi_email button{position: absolute;top: 16px;right: 19px;width: 11px;height: 11px;text-indent: -9999px;background: url(../images/member/btn_close_mb.png) 0 0 no-repeat;}
 .certifi_email{display: none;}
-.certifi_phone{display: none;}
+/* .certifi_phone{display: none;} */
 
-@media (max-width: 1024px){
-	.content_sub h4{font-size: 26px;text-indent: 0;}
-}
 @media (max-width: 767px){
-	.content_sub h4{font-size: 24px;}
 	.content_sub .greetings{background: none;padding:15px 10px 30px;}
 	.content_sub .greetings p{font-size: 30px;margin-bottom: 20px;}
-	.content_sub .certifi section,.content_sub .certifi section+section{background: none;padding: 0 20px 35px;background-color: yellow;width: 49%;}
+	.content_sub .certifi section,.content_sub .certifi section+section{background: none;padding: 0 20px 35px;width: 49%;}
 	.content_sub .certifi section h5{padding-top: 20px;font-size: 25px;}
 	.content_sub .certifi section p+a{width: ;}
 }

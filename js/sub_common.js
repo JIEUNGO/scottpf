@@ -1,10 +1,8 @@
-
-	/*lnb, lnb2*/
 (function(){
+	/*lnb, lnb2*/
 	$.fn.lnb = function(){
 		var ts = $(this);
-		var lnbA = " ." + ts.attr("class") + ">ul>li>a"
-		
+		var lnbA = ".pc" + " ." + ts.attr("class") + ">ul>li>a"+",.tablet" + " ." + ts.attr("class") + ">ul>li>a";
 		$(document).on("click", lnbA, function(e){
 				e.preventDefault();
         var myThis = $(this);
@@ -18,11 +16,17 @@
           $(".lnb li ul:visible").slideUp(300);
         }
     });
+    var lnbB = ".mobile" + " ." + ts.attr("class") + ">ul>li>a";
+    $(document).on("click", lnbB, function(){
+    	var myThis = $(this);
+			var lnb2 = myThis.closest("ul").find("li a.on")
+			lnb2.attr("class", "");
+			myThis.addClass("on");
+    });
 	};
 	$.fn.lnb2 = function(){
 		var ts = $(this);
 		var lnbA = ".pc" + " ." + ts.attr("class") + ">ul>li>a"+",.tablet" + " ." + ts.attr("class") + ">ul>li>a";
-		console.log(lnbA);
 		$(document).on("click", lnbA, function(){
 			var myThis = $(this);
 			var lnb2 = myThis.closest("ul").find("li a.on")

@@ -30,9 +30,9 @@
 .pagenation_wrap{margin-top: 56px;}
 
 @media (max-width:1024px) {
-	.content .area_sch_wrap{background-color: #ebebeb;position: relative;height: initial;}
+	.content .area_sch_wrap{background-color: #ebebeb;position: relative;height: auto;}
 	.content .area_sch_wrap img{display: none;}
-	.content .area_sch_wrap div{margin-top: 52px;width: 100%;padding:0 10% 5%;min-width:initial;}
+	.content .area_sch_wrap div{margin-top: 52px;width: 100%;padding:0 10% 5%;min-width:auto;}
 	.content .area_sch_wrap div p{position: relative;width: 100%;padding-right: 80px;}
 	.content .area_sch_wrap div form:first-child p span{width: 49.1%;display: inline-block;}
 	.content .area_sch_wrap div form:first-child p span+span{position: relative;}

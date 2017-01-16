@@ -8,12 +8,6 @@
 .btn_agree label{margin-right: 17px;}
 .btn_agree input[type="radio"]{margin-right: 4px;}
 
-@media (max-width: 1024px){
-	.content_sub h4{font-size: 26px;text-indent: 0;}
-}
-@media (max-width: 767px){
-	.content_sub h4{font-size: 24px;}
-}
 @media (max-width: 457px){
 	.btn_agree span+span{display: block;width: 100%;padding-top: 5px;}
 }

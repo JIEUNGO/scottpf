@@ -26,11 +26,7 @@ input[name="user_addr"]{background-color: #dbdbdb;}
 .mb_push+.mb_push .mb_table_cell>label{margin-right: 22px;}
 .mb_push+.mb_push select{width: 121px;}
 
-@media (max-width: 1024px){
-	.content_sub h4{font-size: 26px;text-indent: 0;}
-}
 @media (max-width: 767px){
-	.content_sub h4{font-size: 24px;}
 	.mb_push_table h5{margin-bottom: 10px;}
 	.mb_table_row{display: block;margin-bottom: 10px;}
 	.mb_table_cell{display: block;padding: 0 0 8px;width: 100%;}
