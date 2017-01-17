@@ -38,15 +38,15 @@ $.fn.certi1 = function(){
 	/*클릭이벤트*/
 	ts.on("submit",function(){
 		var phone2 = $("#phone_2")
-		var reg_phone2 =  /\d{3,4}$/g;
+		var reg_phone2 =  /^\d{3,4}$/g;
 		var result_phone2 = reg_phone2.exec(phone2.val());
 
 		var phone3 = $("#phone_3")
-		var reg_phone3 =  /\d{4}$/g;
+		var reg_phone3 =  /^\d{4}$/g;
 		var result_phone3 = reg_phone3.exec(phone3.val());
 
 		var certifi_num = $("#certifi_num");
-		var reg_num =  /\d{6}$/g;
+		var reg_num =  /^\d{6}$/g;
 		var result_num = reg_num.exec(certifi_num.val());
 
 		if(result_phone2 == null){

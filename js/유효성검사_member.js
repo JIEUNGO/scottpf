@@ -15,17 +15,17 @@ $(function(){
 			var user_name = $("#user_name");
 			var user_email = $("#user_email");
 			var user_phone = $("#user_phone");
-			var user_phone_2 = $("#user_phone_2");
-			var user_mobile_1 = $("#user_mobile_1");
-			var user_mobile_2 = $("#user_mobile_2");
+			var user_phone2 = $("#user_phone_2");
+			var user_mobile1 = $("#user_mobile_1");
+			var user_mobile2 = $("#user_mobile_2");
 
 			var result_id = reg_id.exec(my_id.val());
 			var result_pw = reg_pw.exec(my_pw.val());
 			var result_name = reg_name.exec(user_name.val());
 			var result_email = reg_email.exec(user_email.val());
 			var result_phone = reg_phone.exec(user_phone.val());
-			var result_phone2 = reg_phone2.exec(user_phone_2.val());
-			var result_mobile = reg_mobile.exec(user_mobile_1.val());
+			var result_phone2 = reg_phone2.exec(user_phone2.val());
+			var result_mobile = reg_mobile.exec(user_mobile1.val());
 			var result_mobile1 = reg_mobile_1.exec(user_mobile_2.val());
 
 
