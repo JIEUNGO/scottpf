@@ -339,6 +339,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
   .col_mobile_12{width: 100% ! important;}
   
   #container{margin-bottom: 150px;}
+  .content{margin-bottom: 150px;}
   
   /* header */
   #header h1{padding: 14px 0 0 13px;}

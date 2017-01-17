@@ -1,6 +1,7 @@
 <? include "inc/top.html"?>
   <title>SCOTT North Asia | 회원정보 입력</title>
   <script type="text/javascript" src="js/sub_common.js"></script>
+  <script type="text/javascript" src="js/member_3.js"></script>
   <link rel="stylesheet" type="text/css" href="css/member_3.css">
  </head>
  <body>
@@ -52,7 +53,7 @@
 						<li class="on">회원정보 입력</li>
 						<li>회원가입 완료</li>
 					</ul>
-					<form action="#">
+					<form action="member_4.html" class="member_4">
 						<fieldset>
 							<legend>회원정보 입력</legend>
 							<div class="mb_push">						
@@ -62,21 +63,21 @@
 										<div class="mb_table_row">
 											<div class="mb_table_cell"><label for="user_id">아이디</label></div>
 											<div class="mb_table_cell">
-												<input type="text" name="user_id" id="user_id" placeholder="아이디" />
+												<input type="text" name="user_id" id="user_id" placeholder="아이디" value="abcd123" />
 												<a href="#">중복확인</a> 아이디는 4~10자로 입력해주세요
 											</div>
 										</div>
 										<div class="mb_table_row">
 											<div class="mb_table_cell"><label for="user_pw">비밀번호</label></div>
-											<div class="mb_table_cell"><input type="password" name="user_pw" id="user_pw" /></div>
+											<div class="mb_table_cell"><input type="password" name="user_pw" id="user_pw" value="123456" /></div>
 										</div>
 										<div class="mb_table_row">
 											<div class="mb_table_cell"><label for="user_pw_1">비밀번호확인</label></div>
-											<div class="mb_table_cell"><input type="password" name="user_pw_1" id="user_pw_1" /></div>
+											<div class="mb_table_cell"><input type="password" name="user_pw_1" id="user_pw_1" value="123456" /></div>
 										</div>
 										<div class="mb_table_row">
 											<div class="mb_table_cell"><label for="user_name">이름</label></div>
-											<div class="mb_table_cell"><input type="text" name="user_name" id="user_name" placeholder="이름" /></div>
+											<div class="mb_table_cell"><input type="text" name="user_name" id="user_name" placeholder="이름" value="지은" /></div>
 										</div>
 										<div class="mb_table_row">
 											<div class="mb_table_cell"><label for="user_birth">생년월일</label></div>
@@ -95,7 +96,7 @@
 										<div class="mb_table_row">
 											<div class="mb_table_cell"><label for="user_email">이메일</label></div>
 											<div class="mb_table_cell">
-												<input type="text" name="user_email" id="user_email" placeholder="이메일 주소" />
+												<input type="text" name="user_email" id="user_email" placeholder="이메일 주소" value="eunqu@naver.com" />
 												<label for="agree_mail">메일링 동의</label>
 												<input type="checkbox" name="agree_mail" id="agree_mail" />
 											</div>
@@ -104,43 +105,43 @@
 											<div class="mb_table_cell"><label for="user_phone">전화번호</label></div>
 											<div class="mb_table_cell">
 												<select name="phone_location" id="phone_location" title="지역번호">
-                          <option value="선택">선택</option>
-                          <option value="02" selected>02</option>
-                          <option value="031">031</option>
-                          <option value="032">032</option>
-                          <option value="033">033</option>
-                          <option value="041">041</option>
-                          <option value="042">042</option>
-                          <option value="043">043</option>
-                          <option value="044">044</option>
-                          <option value="051">051</option>
-                          <option value="052">052</option>
-                          <option value="053">053</option>
-                          <option value="054">054</option>
-                          <option value="055">055</option>
-                          <option value="061">061</option>
-                          <option value="062">062</option>
-                          <option value="063">063</option>
-                          <option value="064">064</option>
-                        </select> -
-                        <input type="text" name="user_phone" id="user_phone" title="전화번호 가운데 3~4자리" required="required" /> - 
-                        <input type="text" name="user_phone_2" id="user_phone_2" title="전화번호 뒤 3~4자리" required="required" />
+              <option value="선택">선택</option>
+              <option value="02" selected>02</option>
+              <option value="031">031</option>
+              <option value="032">032</option>
+              <option value="033">033</option>
+              <option value="041">041</option>
+              <option value="042">042</option>
+              <option value="043">043</option>
+              <option value="044">044</option>
+              <option value="051">051</option>
+              <option value="052">052</option>
+              <option value="053">053</option>
+              <option value="054">054</option>
+              <option value="055">055</option>
+              <option value="061">061</option>
+              <option value="062">062</option>
+              <option value="063">063</option>
+              <option value="064">064</option>
+            </select> -
+            <input type="text" name="user_phone" id="user_phone" title="전화번호 가운데 3~4자리" value="123" /> - 
+            <input type="text" name="user_phone_2" id="user_phone_2" title="전화번호 뒤 4자리" value="1234" />
 											</div>
 										</div>
 										<div class="mb_table_row">
 											<div class="mb_table_cell"><label for="user_mobile">휴대폰번호</label></div>
 											<div class="mb_table_cell">
-												<select name="user_mobile" id="user_mobile" required="required" title="통신사번호">
-                          <option value="">선택</option>
-                          <option value="010" selected>010</option>
-                          <option value="011">011</option>
-                          <option value="016">016</option>
-                          <option value="017">017</option>
-                          <option value="018">018</option>
-                          <option value="019">019</option>
-                        </select> -
-                        <input type="text" name="user_mobile_1" id="user_mobile_1" required="required" title="휴대폰번호 가운데 3~4자리" /> - 
-                        <input type="text" name="user_mobile_2" id="user_mobile_2" required="required" title="휴대폰번호 뒤 4자리" />
+												<select name="user_mobile" id="user_mobile" title="통신사번호">
+              <option value="">선택</option>
+              <option value="010" selected>010</option>
+              <option value="011">011</option>
+              <option value="016">016</option>
+              <option value="017">017</option>
+              <option value="018">018</option>
+              <option value="019">019</option>
+            </select> -
+            <input type="text" name="user_mobile_1" id="user_mobile_1" title="휴대폰번호 가운데 3~4자리" value="123" /> - 
+            <input type="text" name="user_mobile_2" id="user_mobile_2" title="휴대폰번호 뒤 4자리" value="1234" />
 											</div>
 										</div>
 										<div class="mb_table_row">
