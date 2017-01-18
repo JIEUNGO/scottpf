@@ -161,7 +161,6 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .content_sub figcaption{text-align: center;margin-top: 38px;line-height: 30px;height: 80px;}
 .content_sub figcaption span{font-weight: bold;}
 .mb_80, .pro_list_2 li{margin-bottom: 80px;}
-.ml_0{margin-left: 0 !important;}
 
 /* list range, 모델명검색 */
 .list_range{position: absolute;top:4px;right: 0;}
@@ -241,6 +240,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
   .gnb>ul>li+li+li+li>a:hover,
   .gnb>ul>li+li+li+li>a:focus,
   .gnb>ul>li+li+li+li>.on{background: url(../images/common/bullet_gnb_ov.png) right 50% no-repeat !important;padding-right: 21px;}
+  .gnb>ul>li>div>.info_prd_wrap>li>ul{display: block !important;}
 }
 
 /* tablet */
