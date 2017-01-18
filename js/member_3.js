@@ -9,7 +9,6 @@ $(function(){
 			var reg_mobile = /^\d{3,4}$/g;
 			var reg_mobile1 = /^\d{4}$/g;
 
-
 			var my_id = $("#user_id");
 			var my_pw = $("#user_pw");
 			var my_pwCom = $("#user_pw_1");
@@ -19,8 +18,7 @@ $(function(){
 			var user_phone2 = $("#user_phone2");
 			var user_mobile1 = $("#user_mobile1");
 			var user_mobile2 = $("#user_mobile2");
-			var old_addr = $("#old_addr").val();
-
+			var user_birth = $("#user_birth");
 
 			var result_id = reg_id.exec(my_id.val());
 			var result_pw = reg_pw.exec(my_pw.val());
@@ -58,8 +56,26 @@ $(function(){
 			}
 			else if(result_email == null){
 				alert("잘못된 이메일 형식입니다.");
-				user_email.val("");
-				user_email.focus();
+				result_email.val("");
+				result_email.focus();
+				return false;
+			}
+			else if(user_birth.selectedIndex < 1){
+				alert("생년월일 [년]을 선택해주세요.");
+				user_birth.val("");
+				user_birth.focus();
+				return false;
+			}
+			else if(user_birth_1.selectedIndex < 1){
+				alert("생년월일 [월]을 선택해주세요.");
+				user_birth_1.val("");
+				user_birth_1.focus();
+				return false;
+			}
+			else if(user_birth_2.selectedIndex < 1){
+				alert("생년월일 [일]을 선택해주세요.");
+				user_birth_2.val("");
+				user_birth_2.focus();
 				return false;
 			}
 			else if(result_phone == null){
