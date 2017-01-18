@@ -160,7 +160,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .content_sub>.pro_list_2>li>a:hover,.content_sub>.pro_list_2>li>a:focus{border: 1px solid #4c4c4c;}
 .content_sub figcaption{text-align: center;margin-top: 38px;line-height: 30px;height: 80px;}
 .content_sub figcaption span{font-weight: bold;}
-.mb_80, .pro_list_2 li{margin-bottom: 80px;}
+.mb_80, .pro_list_2 li a{margin-bottom: 80px;}
 
 /* list range, 모델명검색 */
 .list_range{position: absolute;top:4px;right: 0;}
