@@ -23,7 +23,7 @@
 .content .store_wrap>ul>li table{float: left;margin-top: 21px;margin-left: 72px;width: 37%;}
 .content .store_wrap>ul>li p{float: right;}
 .content .store_wrap>ul>li table th,.content .store_wrap>ul>li table td{padding: 6px;vertical-align: top;}
-.content .store_wrap>ul>li table th{font-weight: bold;min-width: 77px;}
+.content .store_wrap>ul>li table th{font-weight: bold;min-width: 100px;}
 .fwb_fcr{font-weight: bold;color: #ff0000;}
 .content .store_wrap>ul>li p a{display: inline-block;width: 82px;height: 28px;color:#fff;font-size: 13px;padding: 5px 8px 5px 25px;background: #333333 url(../images/store/icon_detail.png) 5px 50% no-repeat;}
 .content .store_wrap>ul>li p a+a{background-image: url(../images/store/icon_map.png);}
@@ -32,7 +32,8 @@
 @media (max-width:1024px) {
 	.content .area_sch_wrap{background-color: #ebebeb;position: relative;height: auto;}
 	.content .area_sch_wrap img{display: none;}
-	.content .area_sch_wrap div{margin-top: 52px;width: 100%;padding:0 10% 5%;min-width:auto;}
+	.content .area_sch_wrap div{margin-top: 52px;width: 100%;padding:0 10% 5%;min-width:initial;}
+	html>body .content .area_sch_wrap div{min-width:auto;} /* 내일 확인 요망!- 아이폰으로 테스트 */
 	.content .area_sch_wrap div p{position: relative;width: 100%;padding-right: 80px;}
 	.content .area_sch_wrap div form:first-child p span{width: 49.1%;display: inline-block;}
 	.content .area_sch_wrap div form:first-child p span+span{position: relative;}

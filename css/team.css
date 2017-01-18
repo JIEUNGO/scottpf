@@ -2,10 +2,11 @@
 #container{margin-bottom: 150px;}
 .content h4{padding: 40px 0 10px 10px;font-size: 28px;font-weight: bold;background: url(../images/common/line_cyc_common.png) 0 bottom repeat-x;}
 .content .team_wrap{padding: 2.5% 1.5% 0;}
-.content .team_wrap li{width: 48.584%;height: 480px;float: left;margin-left: 2.8333%;margin-bottom: 50px;position: relative;}
-.content .team_wrap li:first-child{margin-left: 0;}
-.content .team_wrap li a:before{content: "";background: url(../images/common/bg_op60_black.png) 0 0 repeat;/* background:#000;opacity:0.6;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=60); */transition:all 0.3s linear;z-index:5;position:absolute;top:0;left: 0;width: 100%;height: 100%;display: none;}
+.content .team_wrap li a{width: 48.584%;height: 480px;float: left;margin-left: 2.8333%;margin-bottom: 50px;position: relative;display: block;}
+.content .team_wrap li a:first-child{margin-left: 0;}
+.content .team_wrap li a:before{content: "";background: url(../images/common/bg_op60_black.png) 0 0 repeat;transition:all 0.3s linear;z-index:5;position:absolute;top:0;left: 0;width: 100%;height: 100%;display: none;}
 .content .team_wrap li a:hover:before,.content .team_wrap li a:focus:before{display: block;}
+.content .team_wrap li figure{padding: 2.5%;}
 .content .team_wrap li h5{font-size: 23px;font-weight: bold;padding: 12px 0;}
 .content .team_wrap li p{font-size: 14px;line-height: 24px;-webkit-line-clamp:5;height: 120px;display: -webkit-box;text-overflow: ellipsis;overflow: hidden;-webkit-box-orient:vertical;word-wrap: break-word;}
 .content .team_wrap li span{display: none;position: absolute;top:40%;left: 32%;right: 32%;width: auto;height: 50px;padding: 10px;color:#fff;font-size: 20px;font-weight: bold;z-index: 6;border: 2px solid #fff;/* background-color: #afca43; */text-align: center;}
@@ -15,17 +16,18 @@
 @media (max-width: 1024px){
 	.content .team_wrap li span{font-size: 17px;}
 }
-
 @media (max-width:767px) {
 	#container{margin-bottom: 100px;}
-	.content .team_wrap li{width: 100%;margin-left: 0;}
+	.content .team_wrap li a{width: 100%;height: 550px;margin-left: 0;}
 	.content .team_wrap li img{width: 100%;}
 	.content .team_wrap li span{font-size: 20px;}
 }
-
 @media (max-width:450px) {
 	.content h4{font-size: 24px;padding: 30px 0 10px 10px;}
-	.content .team_wrap li{height: 400px;}
+	.content .team_wrap li a{height: 450px;}
 	.content .team_wrap li span{font-size: 14px;padding: 13px 5px;}
 	.content .team_wrap li h5{font-size: 18px;padding: 10px 0;}
+}
+@media (max-width:380px) {
+	.content .team_wrap li a{height: 350px;}
 }

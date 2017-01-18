@@ -52,7 +52,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .utilmenu fieldset{float: right;border: 1px solid #979797;background: url(../images/common/bg_header_sch_dotline.png) 147px 4px no-repeat;}
 .utilmenu fieldset>input[type="text"]{background-color: #000;border: none;padding: 8px 4px;width: 147px;color:#fff;}
 .utilmenu fieldset>input[type="image"]{padding: 5px 8px 5px 9px;}
-.gnb{padding:78px 0 0 31.6666%;}
+.gnb{padding:78px 0 0 31.6666%;height: 110px;}
 .gnb>ul>li{float: left;width: 12%;white-space:nowrap;}
 .gnb>ul>li+li{width: 7%;margin-left: 8%;}
 .gnb>ul>li+li+li{width: 12%;margin-left:10%}

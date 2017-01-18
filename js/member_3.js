@@ -86,10 +86,7 @@ $(function(){
 				user_mobile2.focus();
 				return false;
 			}
-			else if(old_addr == null){
-				alert("주소를 입력하지 않았습니다.");
-				return false;
-			}else{
+			else{
 				alert("회원가입을 축하드립니다.");
 			}
 	};
