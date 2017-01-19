@@ -19,6 +19,8 @@ $(function(){
 			var user_mobile1 = $("#user_mobile1");
 			var user_mobile2 = $("#user_mobile2");
 			var user_birth = $("#user_birth");
+			var user_birth_1 = $("#user_birth_1");
+			var user_birth_2 = $("#user_birth_2");
 
 			var result_id = reg_id.exec(my_id.val());
 			var result_pw = reg_pw.exec(my_pw.val());
@@ -28,7 +30,9 @@ $(function(){
 			var result_phone2 = reg_phone2.exec(user_phone2.val());
 			var result_mobile = reg_mobile.exec(user_mobile1.val());
 			var result_mobile1 = reg_mobile1.exec(user_mobile2.val());
-
+			var result_birth = $("option",user_birth).index($("option:selected",user_birth));
+			var result_birth1 = $("option",user_birth_1).index($("option:selected",user_birth_1));
+			var result_birth2 = $("option",user_birth_2).index($("option:selected",user_birth_2));
 
 			if(result_id == null){
 				alert("아이디는 소문자시작으로 6~12자로 입력하세요.");
@@ -60,19 +64,19 @@ $(function(){
 				result_email.focus();
 				return false;
 			}
-			else if(user_birth.selectedIndex < 1){
+			else if(result_birth < 1){
 				alert("생년월일 [년]을 선택해주세요.");
 				user_birth.val("");
 				user_birth.focus();
 				return false;
 			}
-			else if(user_birth_1.selectedIndex < 1){
+			else if(result_birth1 < 1){
 				alert("생년월일 [월]을 선택해주세요.");
 				user_birth_1.val("");
 				user_birth_1.focus();
 				return false;
 			}
-			else if(user_birth_2.selectedIndex < 1){
+			else if(result_birth2 < 1){
 				alert("생년월일 [일]을 선택해주세요.");
 				user_birth_2.val("");
 				user_birth_2.focus();
