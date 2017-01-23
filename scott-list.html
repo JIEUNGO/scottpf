@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>퍼블리싱 리스트</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="images/common/favicon.ico">
+	<link rel="stylesheet" href="css/html-list-style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="bodyWrap">
+	<div id="header">
+		<h1>Project <span>SCOTT NORTH ASIA</span></h1>
+		<div class="author-info">
+			<a href="images/cordinglist/myprofile.jpg" target="_blank" class="author-profile" title="프로필 보기"><img src="images/cordinglist/noprofile.gif" alt="프로필 사진"></a>
+			<a href="your profile link" target="_blank" class="author-name" title="프로필 보기">고지은</a>
+			<a href="mailto:fulgidg@email.com" class="author-email" title="메일보내기"><i class="fa fa-paper-plane"></i></a>
+		</div>
+	</div>
+	<div id="side">
+		<h2><i class="fa fa-mobile"></i> <i class="fa fa-desktop"></i> <span id="page_title2">Page title</span> : <span id="page_leng"></span></h2>
+		<div id="urls" class="links"></div>
+	</div>
+	<div id="frame">
+		<div class="ctrl">
+			<button type="button" id="btn_reload" class="btn_ctrl" title="새로고침"><i class="fa fa-refresh"></i></button>
+			<span class="pageurl_box">
+				<input type="text" name="" id="page_url" value="" class="pageurl" readonly>
+				<span id="page_size"></span>
+				<span id="page_title"></span>
+			</span>
+			<button type="button" id="btn_external" class="btn_ctrl" title="새창열기"><i class="fa fa-external-link"></i></button>
+			<button type="button" id="btn_mobile" class="btn_ctrl" title="모바일보기"><i class="fa fa-mobile"></i></button>
+			<button type="button" id="btn_desktop" class="btn_ctrl" title="PC보기"><i class="fa fa-desktop"></i></button>
+		</div>
+		<div class="iframe_wrap">
+			<iframe src="" frameborder="0" id="page_show"></iframe>
+			<button type="button" class="rotate">회전</button>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/htmi-list-function.js"></script>
+<script>
+var mobile = false;
+var page_list = { "pages":[
+	{"title":"메인페이지","url":""},
+	{"title":"메인화면", "url":"index.html"},
+	{"title":"서브페이지", "url":""},
+	{"title":"로그인", "url":"login.html"},
+	{"title":"회원가입동의", "url":"member_1.html"},
+	{"title":"회원가입인증", "url":"member_2.html"},
+	{"title":"회원가입양식", "url":"member_3.html"},
+	{"title":"회원가입완료", "url":"member_4.html"},
+	{"title":"2017 자전거", "url":"product_cycle.html"},
+	{"title":"자전거 상세페이지", "url":"product_cycle_info.html"},
+	{"title":"의류", "url":"product_apparel.html"},
+	{"title":"헬멧", "url":"product_helmet.html"},
+	{"title":"휠", "url":"product_wheel.html"},
+	{"title":"팀소개", "url":"team.html"},
+	{"title":"취급판매점", "url":"store.html"},
+	{"title":"FAQ", "url":"faq.html"},
+	{"title":"공지/보도", "url":"notice"}
+]};
+</script>
+
+</body>
+</html>
