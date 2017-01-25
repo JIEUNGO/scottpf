@@ -15,21 +15,24 @@ $.fn.lnb = function(){
         $(".lnb li ul:visible").slideUp(300);
       }
   });
-  /*var lnbB = ".mobile" + " ." + ts.attr("class") + ">ul>li>a";
-  $(document).on("click", lnbB, function(){
+  var lnbSub = " ." + ts.attr("class") + ">ul>li>ul>li>a";
+  $(document).on("click", lnbSub, function(e){
+		e.preventDefault();
   	var myThis = $(this);
-		var lnb2 = myThis.closest("ul").find("li a.on")
-		lnb2.attr("class", "");
-		myThis.addClass("on");
-  });*/
+  	$(".lnb .active").removeClass('active');
+  	var lnbsubA = myThis.closest("ul").find("li a.active");
+  	lnbsubA.attr("class","");	  	
+  	myThis.addClass("active");
+  });
 };
+
 $.fn.lnb2 = function(){
 	var ts = $(this);
 	var lnbA = ".pc" + " ." + ts.attr("class") + ">ul>li>a"+",.tablet" + " ." + ts.attr("class") + ">ul>li>a";
 	$(document).on("click", lnbA, function(){
 		var myThis = $(this);
-		var lnb2 = myThis.closest("ul").find("li a.on")
-		console.log(lnb2);
+		var lnb2 = myThis.closest("ul").find("li a.on");
+		//console.log(lnb2);
 			lnb2.attr("class", "");
 			myThis.addClass("on");
 	});
@@ -60,7 +63,7 @@ $.fn.quickMenu = function(opt){
 $(function(){
 	$(".lnb").lnb();
 	$(".lnb_2").lnb2();
-	$(".quick_menu").quickMenu({speed:900});
+	$(".quick_menu").quickMenu({speed:1500});
 	$(".move_top").on("click", function() {
 		$('html, body').animate({scrollTop: 0}, 1000);
 	});
