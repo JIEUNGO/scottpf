@@ -125,9 +125,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
 .lnb>ul>li>ul{padding: 15px 0;}
 .lnb>ul>li>ul>li{padding: 0 31px;margin-top: 8px;background: url(../images/common/bullet_lnb_sub.png) 16px 50% no-repeat;}
 .lnb>ul>li>ul>li:first-child{margin: 0;}
-.lnb>ul>li>ul>li>a.active{font-weight: bold;}
-.lnb>ul>li>ul{display: none;}
-.lnb>ul>li>.on+ul{display: block;}
+.lnb>ul>li>ul>li>.active{font-weight: bold;}
 
 .lnb_2 h3{padding-left: 12px;}
 .lnb_2>ul{margin-top: 13px;border: 1px solid #cccccc;}
