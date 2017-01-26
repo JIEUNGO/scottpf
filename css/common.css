@@ -359,7 +359,6 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
   /* lnb */
   .lnb>ul>li{width: 30%;min-width: 150px;margin-bottom: 5px;}
   .lnb>ul>li>a{padding: 3px 30px;}
-  .lnb>ul>li>ul{display: none;}
 
   /* 게시판 */
   .list_range ul{display: none;}
@@ -383,6 +382,7 @@ textarea{resize:none;vertical-align: middle;padding: 2px;}
   .content_sub .agree_procedure li{padding: 16px 10px 10px;font-size: 13px;}
 }
 @media (max-width: 424px){
+  .content_sub h4{font-size: 18px !important;}
   .content_sub .agree_procedure li,.content_sub .agree_procedure .on{height: 40px;background-position: right -4px;padding: 5px 20px 10px 0;}
 }
 @media (max-width: 400px){

@@ -12,7 +12,7 @@
 .content_sub .certifi section p+a{float: right;background-color: #85a212;max-width: 121px;text-align: center;padding: 8px;font-weight: bold;color:#fff;}
 .content_sub .certifi section:first-child p+a{margin-top: 20px;}
 .content_sub .certifi+ul{border: 1px solid #cccccc;border-radius: 5px;padding: 27px 25px;}
-.content_sub .certifi+ul li{background: url(../images/member/bullet_mb_1.png) 0 50% no-repeat;padding-left: 13px;margin-top:7px;}
+.content_sub .certifi+ul li{background: url(../images/member/bullet_mb_1.png) 0 8px no-repeat;padding-left: 13px;margin-top:7px;}
 .content_sub .certifi+ul li:first-child{margin-top: 0;}
 
 .certifi_phone,.certifi_email{position: fixed;top:50%;left: 50%;margin-top: -200px;margin-left: -300px;width:100%;max-width: 598px;z-index:100;background-color: #fff;}
