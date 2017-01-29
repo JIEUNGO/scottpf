@@ -64,7 +64,7 @@ $.fn.quickMenu = function(opt){
 $(function(){
 	$(".lnb").lnb();
 	$(".lnb_2").lnb2();
-	$(".quick_menu").quickMenu({speed:900});
+	$(".quick_menu").quickMenu({speed:1500});
 	$(".move_top").on("click", function() {
 		$('html, body').animate({scrollTop: 0}, 1000);
 	});

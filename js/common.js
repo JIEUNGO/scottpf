@@ -52,19 +52,13 @@
     var mode = opt.mode;
     var ts = $(this);
     var selector = " ." + ts.attr("class") + ">ul>li>a";
-    /*$(document).on("focus mouseover", selector, function(e) {
-        e.preventDefault();
-        var myThis = $(this);
-        //$(this).closest("ul").find(">li>div:visible, >li>ul:visible").stop().slideUp(300)
-        myThis.next().slideDown(300);
-    });*/
 
     if(mode == "all"){
       var selector = ".pc" + " ." + ts.attr("class") + ">ul>li>a";
       $(document).on("mouseover focus", selector, function(){
         var myThis = $(this);
         $(this).closest("ul").find(">li>div:visible, >li>ul:visible").stop().slideUp(300)
-        .end().find("a.on").removeClass("on");
+        .end().find("a.on").removeClass("on").off('hover').blur();
         myThis.next().slideDown(300);
         $(this).addClass("on");
       });
@@ -79,8 +73,7 @@
           myThis.addClass("on");
           myThis.next().slideDown(300);
         } else {
-          if(!myThis.hasClass("not_css")) myThis.css({"background-image":"url(images/common/bullet_lnb_ov.png)", color:"#fff"});
-          myThis.removeClass('on').blur();   
+          myThis.removeClass('on').off('hover').blur();   
           $(".gnb ul div:visible, .ul_common:visible").slideUp(300);
         }
       });
@@ -105,17 +98,12 @@
       });
      
     };
-
-
     $(document).on("click",".btn_gnb",function(){
       $(".gnb").slideToggle(500);
     });
-
   }
  
-
-
-  /*resize*/
+   /*resize*/
     $(window).on("resize",function(){
   var b = $("body");
    var w = $(window).width()+17;
