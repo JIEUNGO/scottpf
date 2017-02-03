@@ -30,11 +30,11 @@
 .pagenation_wrap{margin-top: 56px;}
 
 /* 레이어팝업,모달창 */
-.btnCloseLayer{width: 11px;height:11px;position: absolute;top:29.5%;right: 50%;margin-right: -310px;z-index: 20;text-indent: -9999px;background: url(../images/member/btn_close_mb.png) 0 0 no-repeat;}
 .pop_dim{background: url(../images/common/bg_dim.png) 0 0;position: fixed;left: 0;top: 0;width: 100%;height: 100%;overflow: auto;z-index: 51;}
 .pop_inner_wrap{display: table;width: 100%;max-width: 600px;margin: 0 auto;height: 100%;padding: 10px;}
 .pop_inner{display: table-cell;vertical-align: middle;}
-.popup{width: 100%;max-width:500px;min-height: 550px;background-color: aqua;margin: 0 auto;}
+#map_wrap{padding: 20px;background-color: #fff;position: relative;}
+.btnCloseLayer{width: 11px;height:11px;position: absolute;top:10px;right: 320px;margin-right: -310px;z-index: 20;text-indent: -9999px;background: red url(../images/member/btn_close_mb.png) 0 0 no-repeat;}
 
 @media (max-width:1024px) {
 	.content .area_sch_wrap{background-color: #ebebeb;position: relative;height: auto;}

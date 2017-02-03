@@ -43,8 +43,9 @@
 				var el_1 = $("<div/>",{"class":"pop_dim"});
 				var el_2 = $("<div/>",{"class":"pop_inner_wrap"}).appendTo(el_1);
 				var el_3 = $("<div/>",{"class":"pop_inner"}).appendTo(el_2);
-				$("<button/>",{"class":"btnCloseLayer","text":"닫기"}).appendTo(el_3);
-				el_3.prepend(data);
+				var el_4 = $("<div/>",{"id":"map_wrap"}).appendTo(el_3);
+				$("<button/>",{"class":"btnCloseLayer","text":"닫기"}).appendTo(el_4);
+				el_4.prepend(data);
 				$("body").append(el_1);
 			});
 			$(document).on("click",".btnCloseLayer",function(){
